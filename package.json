@@ -6,8 +6,15 @@
   "scripts": {
     "test": "grunt test"
   },
+  "repositories": {
+    "type": "git",
+    "url": "https://github.com/andrewshawcare/thoughtworks-email-signature-generator.git"
+  },
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com>",
   "license": "ISC",
+  "dependencies": {
+    "node-static": "0.7.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-watch": "~0.6.1",
@@ -18,5 +25,8 @@
     "grunt-htmlhint": "~0.4.0",
     "grunt-plato": "~1.0.0",
     "jsxhint": "~0.4.4"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
