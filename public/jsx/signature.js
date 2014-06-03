@@ -4,7 +4,7 @@ define(["react"], function (React) {
     "use strict";
     return React.createClass({
         render: function () {
-            return <div style={{"float": "left"}}>
+            return <div className={this.props.className} style={{"float": "left"}}>
                 <a href={this.props.logo.href}>
                     <img
                         src={this.props.logo.src}

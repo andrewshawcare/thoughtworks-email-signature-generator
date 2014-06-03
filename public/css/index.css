@@ -6,7 +6,10 @@ body {
 }
 
 input, textarea, select, button {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
     font-family: 'OpenSans-Light', 'Open Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1em;
     width: 100%;
     padding: 0.5em;
     background-color: #ebebeb;
@@ -27,20 +30,37 @@ label {
 }
 
 .application {
-    padding: 1em;
+    margin: 1em;
 }
 
 @media (min-width: 768px) {
     .application {
-        width: 60em;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
 .languageMenu {
-    color: #fff;
     margin: -1em -1em 0 -1em;
-    padding: 0.5em 1em;
+    color: #fff;
+    padding: 0.5em;
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .languageMenu {
+        margin: 0;
+    }
+}
+
+.languageMenu label {
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+}
+
+.languageMenu select {
+    height: 1.7em;
+    display: inline-block;
+    width: auto;
 }
 
 .logo {
@@ -64,8 +84,44 @@ label {
     font-size: 1.1em;
 }
 
-.preview {
-    margin-top: 1.5em;
+@media (min-width: 768px) {
+    .generator {
+        width: 60em;
+        margin: 0 auto 1em auto;
+        overflow: auto;
+        background-color: #f9f9f9;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+@media (min-width: 768px) {
+    .details {
+        float: left;
+        width: 17em;
+        margin: 1em;
+        padding-right: 1em;
+        border-right: 1px solid #eee;
+    }
+}
+
+@media (min-width: 768px) {
+    .preview {
+        float: left;
+        margin: 1em 1em 1em -1px;
+        width: 39em;
+    }
+}
+
+@media (min-width: 768px) {
+    .signature {
+        margin: 1em 0;
+        box-sizing: border-box;
+        padding: 1em;
+        width: 100%;
+        background-color: #fff;
+        border: 1px dashed #eee;
+    }
 }
 
 .primary {
@@ -73,7 +129,12 @@ label {
 }
 
 .footer {
-    margin-top: 1em;
     color: #ccc;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        clear: left;
+    }
 }
