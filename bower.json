@@ -1,0 +1,8 @@
+{
+    "name": "thoughtworks-email-signature-generator",
+    "dependencies": {
+        "requirejs": "~2.1.11",
+        "react": "~0.9.0",
+        "require-jsx": "git://github.com/seiffert/require-jsx.git"
+    }
+}
