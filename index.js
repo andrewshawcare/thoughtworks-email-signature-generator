@@ -1,4 +1,5 @@
 /* global require, process */
+require("newrelic");
 var NodeStatic = require('node-static'),
     file = new NodeStatic.Server('./public'),
     port = Number(process.env.PORT || 5000);

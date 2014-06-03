@@ -13,7 +13,8 @@
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "node-static": "0.7.3"
+    "newrelic": "~1.7.0",
+    "node-static": "~0.7.3"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
