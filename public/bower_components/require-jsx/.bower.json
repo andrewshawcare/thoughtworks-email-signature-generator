@@ -1,0 +1,13 @@
+{
+  "name": "require-jsx",
+  "homepage": "https://github.com/seiffert/require-jsx",
+  "_release": "c20d66daaa",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c20d66daaaa163b6a5f3147fb47c698936199fc5"
+  },
+  "_source": "git://github.com/seiffert/require-jsx.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/seiffert/require-jsx.git"
+}
