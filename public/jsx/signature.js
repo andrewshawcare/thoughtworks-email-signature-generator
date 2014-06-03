@@ -10,7 +10,7 @@ define(["react"], function (React) {
                         src={this.props.logo.src}
                         alt={this.props.logo.alt}
                         style={{
-                            "height": this.props.logo.height,
+                            "max-height": this.props.logo.height,
                             "width": "auto",
                             "display": "block",
                             "float": "left",
