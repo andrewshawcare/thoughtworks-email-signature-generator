@@ -1,17 +1,11 @@
-/* global require, process */
+/* global require, process, __dirname */
 require("newrelic");
-var NodeStatic = require('node-static'),
-    file = new NodeStatic.Server('./public', {
-        cache: 60 * 60 * 24 * 365,
-        headers: {
-            "Vary": "Accept-Encoding"
-        }
-    }),
-    port = Number(process.env.PORT || 5000);
+var Express = require("express"),
+    Compression = require("compression"),
+    port = Number(process.env.PORT || 5000),
+    server = Express();
 
-require('http').createServer(function (request, response) {
-    "use strict";
-    request.addListener('end', function () {
-        file.serve(request, response);
-    }).resume();
-}).listen(port);
+server.use(Compression());
+server.use(Express.static(__dirname + "/public"));
+
+server.listen(port);

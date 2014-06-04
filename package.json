@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "newrelic": "~1.7.0",
-    "node-static": "~0.7.3"
+    "express": "~4.4.1",
+    "compression": "~1.0.6"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
