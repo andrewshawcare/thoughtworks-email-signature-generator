@@ -9,7 +9,7 @@ input, textarea, select, button {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-family: 'OpenSans-Light', 'Open Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     width: 100%;
     padding: 0.5em;
     background-color: #ebebeb;
@@ -86,7 +86,7 @@ label {
 
 @media (min-width: 768px) {
     .generator {
-        width: 60em;
+        width: 48em;
         margin: 0 auto 1em auto;
         overflow: auto;
         background-color: #f9f9f9;
@@ -98,7 +98,7 @@ label {
 @media (min-width: 768px) {
     .details {
         float: left;
-        width: 17em;
+        width: 14em;
         margin: 1em;
         padding-right: 1em;
         border-right: 1px solid #eee;
@@ -109,7 +109,7 @@ label {
     .preview {
         float: left;
         margin: 1em 1em 1em -1px;
-        width: 39em;
+        width: 30em;
     }
 }
 
