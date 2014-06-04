@@ -36,7 +36,8 @@ define(["react"], function (React) {
                             "'Open Sans'," +
                             "'Helvetica Neue'," +
                             "Arial," +
-                            "sans-serif"
+                            "sans-serif",
+                        "font-style": "italic"
                     }}>{this.props.title}</small>
                     <dl style={{"float": "left"}}>
                         <dt style={{

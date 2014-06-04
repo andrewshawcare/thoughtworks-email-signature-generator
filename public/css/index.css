@@ -1,15 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'OpenSans-Light', 'Open Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
     color: #333;
 }
 
 input, textarea, select, button {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    font-family: 'OpenSans-Light', 'Open Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 0.9em;
+    font-weight: 300;
     width: 100%;
     padding: 0.5em;
     background-color: #ebebeb;
