@@ -71,7 +71,7 @@ define([
                         />
                     </div>
                     <a href={properties.thoughtworksUrl}>
-                        <img className="logo" src={this.props.themes.black.logoUrl} alt={properties.thoughtworksLabel}/>
+                        <img className="logo" src={this.props.themes.black.logoUrl} width="200" height="31" alt={properties.thoughtworksLabel}/>
                     </a>
                     <h1 className="title">{properties.title}</h1>
                     <p className="subtitle">{properties.subtitle}</p>

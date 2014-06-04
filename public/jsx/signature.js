@@ -8,10 +8,10 @@ define(["react"], function (React) {
                 <a href={this.props.logo.href}>
                     <img
                         src={this.props.logo.src}
+                        width="200"
+                        height="31"
                         alt={this.props.logo.alt}
                         style={{
-                            "max-height": this.props.logo.height,
-                            "width": "auto",
                             "display": "block",
                             "float": "left",
                             "margin": "1.5em 1em 1.5em 0"
