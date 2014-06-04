@@ -1,14 +1,11 @@
 /* global requirejs, require */
 requirejs.config({
+    baseUrl: "./javascript",
     paths: {
         react: "../bower_components/react/react",
-        jsx: "../bower_components/require-jsx/jsx",
-        JSXTransformer: "../bower_components/react/JSXTransformer"
-    },
-    shim: {
-        JSXTransformer: {
-            exports: "JSXTransformer"
-        }
+        text: "../bower_components/jsx-requirejs-plugin/js/text",
+        jsx: "../bower_components/jsx-requirejs-plugin/js/jsx",
+        JSXTransformer: "../bower_components/jsx-requirejs-plugin/js/JSXTransformer-0.10.0"
     }
 });
 

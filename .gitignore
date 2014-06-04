@@ -1,3 +1,4 @@
+build
 .vagrant
 reports
 newrelic_agent.log

@@ -26,7 +26,8 @@
     "grunt-shell": "~0.7.0",
     "grunt-htmlhint": "~0.4.0",
     "grunt-plato": "~1.0.0",
-    "jsxhint": "~0.4.4"
+    "jsxhint": "~0.4.4",
+    "requirejs": "~2.1.14"
   },
   "engines": {
     "node": "0.10.x"

@@ -1,1 +1,1 @@
-web: node index.js
+web: node ./node_modules/requirejs/bin/r.js -o build.js; node index.js
