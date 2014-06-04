@@ -53,6 +53,10 @@ define([
         render: function () {
             var properties = this.props.properties[this.state.language];
             var theme = this.props.themes[this.state.theme];
+
+            // FIXME: Figure out an elegant solution to updating the title
+            document.title = properties.title;
+            
             return <article className="application">
                 <header>
                     <div className="languageMenu" style={{"background-color": theme.color}}>
