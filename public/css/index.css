@@ -10,7 +10,7 @@ input, textarea, select, button {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 300;
     width: 100%;
     padding: 0.5em;
@@ -98,7 +98,7 @@ label {
 @media (min-width: 768px) {
     .details {
         float: left;
-        width: 14em;
+        width: 21em;
         margin: 1em;
         padding-right: 1em;
         border-right: 1px solid #eee;
@@ -109,7 +109,7 @@ label {
     .preview {
         float: left;
         margin: 1em 1em 1em -1px;
-        width: 30em;
+        width: 23em;
     }
 }
 

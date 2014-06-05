@@ -5,19 +5,6 @@ define(["react"], function (React) {
     return React.createClass({
         render: function () {
             return <div className={this.props.className} style={{"float": "left"}}>
-                <a href={this.props.logo.href}>
-                    <img
-                        src={this.props.logo.src}
-                        width="200"
-                        height="31"
-                        alt={this.props.logo.alt}
-                        style={{
-                            "display": "block",
-                            "float": "left",
-                            "margin": "1.5em 1em 1.5em 0"
-                        }}
-                    />
-                </a>
                 <div style={{
                     "float": "left",
                     "font-family": "'OpenSans-Light'," +
@@ -69,6 +56,22 @@ define(["react"], function (React) {
                         </dd>
                     </dl>
                 </div>
+                <a href={this.props.logo.href} style={{
+                    "float": "left",
+                    "clear": "left",
+                    "margin": "1em 0"
+                }}>
+                    <img
+                        src={this.props.logo.src}
+                        width="200"
+                        height="31"
+                        alt={this.props.logo.alt}
+                        style={{
+                            "display": "block",
+                            "float": "left"
+                        }}
+                    />
+                </a>
             </div>;
         }
     });
