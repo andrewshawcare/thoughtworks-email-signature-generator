@@ -11,5 +11,3 @@ server.use(Compression());
 server.use(Express.static(directory, { maxAge: maxAge }));
 
 server.listen(port);
-
-console.log(process.env.NODE_ENV, server.settings.env, directory);
