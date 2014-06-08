@@ -13,7 +13,8 @@ define(["react"], function (React) {
                         "'Helvetica Neue'," +
                         "Arial," +
                         "sans-serif",
-                    "font-size": "12px"
+                    "font-size": "12px", 
+                    "color":"#000"
                 }}>
                     <strong style={{"display": "block"}}>{this.props.name}</strong>
                     <small style={{
