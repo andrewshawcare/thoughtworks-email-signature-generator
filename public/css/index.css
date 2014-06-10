@@ -115,9 +115,12 @@ label {
     }
 }
 
+.signature {
+    margin: 1em 0;
+}
+
 @media (min-width: 768px) {
     .signature {
-        margin: 1em 0;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: 1em;
