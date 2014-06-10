@@ -6,7 +6,6 @@ define(["react"], function (React) {
         render: function () {
             return <div className={this.props.className} style={{"float": "left"}}>
                 <div style={{
-                    "float": "left",
                     "font-family": "'OpenSans-Light'," +
                         "'Open Sans Light'," +
                         "'Open Sans'," +
@@ -27,40 +26,42 @@ define(["react"], function (React) {
                             "sans-serif",
                         "font-style": "italic"
                     }}>{this.props.title}</small>
-                    <dl style={{"float": "left"}}>
-                        <dt style={{
-                            "float": "left",
-                            "width": "6em"
-                        }}>{this.props.email.label}</dt>
-                        <dd style={{
-                            "float": "left",
-                            "margin": "0"
-                        }}>
-                            <a href={"mailto:" + this.props.email.value} style={{
-                                "text-decoration": "none",
-                                "color": this.props.color
-                            }}>{this.props.email.value}</a>
-                        </dd>
-                        <dt style={{
-                            "float": "left",
-                            "clear": "left",
-                            "width": "6em"
-                        }}>{this.props.telephone.label}</dt>
-                        <dd style={{
-                            "float": "left",
-                            "margin": "0"
-                        }}>
-                            <a href={"tel:" + this.props.telephone.value} style={{
-                                "text-decoration": "none",
-                                "color": this.props.color
-                            }}>{this.props.telephone.value}</a>
-                        </dd>
+                    <dl style={{}}>
+                        <div>
+                            <dt style={{
+                                "display": "inline-block",
+                                "min-width": "6em"
+                            }}>{this.props.email.label}</dt>
+                            <dd style={{
+                                "display": "inline-block",
+                                "margin": "0"
+                            }}>
+                                <a href={"mailto:" + this.props.email.value} style={{
+                                    "text-decoration": "none",
+                                    "color": this.props.color
+                                }}>{this.props.email.value}</a>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt style={{
+                                "display": "inline-block",
+                                "min-width": "6em"
+                            }}>{this.props.telephone.label}</dt>
+                            <dd style={{
+                                "display": "inline-block",
+                                "margin": "0"
+                            }}>
+                                <a href={"tel:" + this.props.telephone.value} style={{
+                                    "text-decoration": "none",
+                                    "color": this.props.color
+                                }}>{this.props.telephone.value}</a>
+                            </dd>
+                        </div>
                     </dl>
                 </div>
                 <a href={this.props.logo.href} style={{
-                    "float": "left",
-                    "clear": "left",
-                    "margin": "1em 0"
+                    "display": "block",
+                    "margin-top": "1em"
                 }}>
                     <img
                         src={this.props.logo.src}
@@ -68,8 +69,7 @@ define(["react"], function (React) {
                         height="31"
                         alt={this.props.logo.alt}
                         style={{
-                            "display": "block",
-                            "float": "left"
+                            "display": "block"
                         }}
                     />
                 </a>
