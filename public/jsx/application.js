@@ -59,7 +59,7 @@ define([
             
             return <article className="application">
                 <header>
-                    <div className="languageMenu" style={{"background-color": theme.color}}>
+                    <div className="languageMenu" style={{"backgroundColor": theme.color}}>
                         <Select
                             className="languageSelect"
                             name="language"
@@ -88,7 +88,7 @@ define([
                         <Input id="telephone" type="tel" label={properties.telephoneLabel} value={this.state.telephone} onChange={this.handleTelephoneChange}/>
                         <Select
                             className="primary"
-                            style={{"background-color": theme.color}}
+                            style={{"backgroundColor": theme.color}}
                             name="theme"
                             label={properties.themeLabel}
                             value={this.state.theme}
@@ -124,7 +124,7 @@ define([
                                 value: this.state.telephone
                             }}
                         />
-                        <button className="button primary" onClick={this.selectSignature} style={{"background-color": theme.color}}>{properties.selectSignatureLabel}</button>
+                        <button className="button primary" onClick={this.selectSignature} style={{"backgroundColor": theme.color}}>{properties.selectSignatureLabel}</button>
                     </section>
                 </section>
                 <footer className="footer">

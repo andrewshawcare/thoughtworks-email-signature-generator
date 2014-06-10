@@ -6,38 +6,38 @@ define(["react"], function (React) {
         render: function () {
             return <div className={this.props.className} style={{"float": "left"}}>
                 <div style={{
-                    "font-family": "'OpenSans-Light'," +
+                    "fontFamily": "'OpenSans-Light'," +
                         "'Open Sans Light'," +
                         "'Open Sans'," +
                         "'Helvetica Neue'," +
                         "Arial," +
                         "sans-serif",
-                    "font-size": "12px", 
+                    "fontSize": "12px", 
                     "color":"#000"
                 }}>
                     <strong style={{"display": "block"}}>{this.props.name}</strong>
                     <em style={{
                         "display": "block",
-                        "font-family": "'OpenSansLight-Italic'," +
+                        "fontFamily": "'OpenSansLight-Italic'," +
                             "'Open Sans Light Italic'," +
                             "'Open Sans'," +
                             "'Helvetica Neue'," +
                             "Arial," +
                             "sans-serif",
-                        "font-style": "italic"
+                        "fontStyle": "italic"
                     }}>{this.props.title}</em>
                     <dl style={{}}>
                         <div>
                             <dt style={{
                                 "display": "inline-block",
-                                "min-width": "6em"
+                                "minWidth": "6em"
                             }}>{this.props.email.label}</dt>
                             <dd style={{
                                 "display": "inline-block",
                                 "margin": "0"
                             }}>
                                 <a href={"mailto:" + this.props.email.value} style={{
-                                    "text-decoration": "none",
+                                    "textDecoration": "none",
                                     "color": this.props.color
                                 }}>{this.props.email.value}</a>
                             </dd>
@@ -45,14 +45,14 @@ define(["react"], function (React) {
                         <div>
                             <dt style={{
                                 "display": "inline-block",
-                                "min-width": "6em"
+                                "minWidth": "6em"
                             }}>{this.props.telephone.label}</dt>
                             <dd style={{
                                 "display": "inline-block",
                                 "margin": "0"
                             }}>
                                 <a href={"tel:" + this.props.telephone.value} style={{
-                                    "text-decoration": "none",
+                                    "textDecoration": "none",
                                     "color": this.props.color
                                 }}>{this.props.telephone.value}</a>
                             </dd>
@@ -61,7 +61,7 @@ define(["react"], function (React) {
                 </div>
                 <a href={this.props.logo.href} style={{
                     "display": "block",
-                    "margin-top": "1em"
+                    "marginTop": "1em"
                 }}>
                     <img
                         src={this.props.logo.src}
@@ -70,7 +70,7 @@ define(["react"], function (React) {
                         alt={this.props.logo.alt}
                         title={this.props.logo.alt}
                         style={{
-                            "border-style": "none",
+                            "borderStyle": "none",
                             "display": "block"
                         }}
                     />

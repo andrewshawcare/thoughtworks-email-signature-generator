@@ -10,6 +10,10 @@ img {
     border-style: none;
 }
 
+strong {
+    font-weight: bold;
+}
+
 input, textarea, select, button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -29,6 +33,7 @@ input, textarea, select, button {
 
 select {
     height: 2.5em;
+    border-style: none;
 }
 
 label {
