@@ -6,6 +6,10 @@ body {
     color: #333;
 }
 
+img {
+    border-style: none;
+}
+
 input, textarea, select, button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;

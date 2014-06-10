@@ -70,6 +70,7 @@ define(["react"], function (React) {
                         alt={this.props.logo.alt}
                         title={this.props.logo.alt}
                         style={{
+                            "border-style": "none",
                             "display": "block"
                         }}
                     />
