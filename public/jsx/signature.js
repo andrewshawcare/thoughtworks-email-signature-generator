@@ -68,6 +68,7 @@ define(["react"], function (React) {
                         width="200"
                         height="31"
                         alt={this.props.logo.alt}
+                        title={this.props.logo.alt}
                         style={{
                             "display": "block"
                         }}
