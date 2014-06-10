@@ -16,7 +16,7 @@ define(["react"], function (React) {
                     "color":"#000"
                 }}>
                     <strong style={{"display": "block"}}>{this.props.name}</strong>
-                    <small style={{
+                    <em style={{
                         "display": "block",
                         "font-family": "'OpenSansLight-Italic'," +
                             "'Open Sans Light Italic'," +
@@ -25,7 +25,7 @@ define(["react"], function (React) {
                             "Arial," +
                             "sans-serif",
                         "font-style": "italic"
-                    }}>{this.props.title}</small>
+                    }}>{this.props.title}</em>
                     <dl style={{}}>
                         <div>
                             <dt style={{
