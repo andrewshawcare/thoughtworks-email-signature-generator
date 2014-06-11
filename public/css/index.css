@@ -108,6 +108,10 @@ label {
     }
 }
 
+.details {
+    margin-bottom: 1em;
+}
+
 @media (min-width: 768px) {
     .details {
         float: left;
@@ -127,7 +131,7 @@ label {
 }
 
 .signature {
-    margin: 1em 0;
+    margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {

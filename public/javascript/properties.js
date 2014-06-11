@@ -18,7 +18,7 @@ define([], function () {
             "blue": "Blue",
             "earth": "Earth",
             "green": "Green",
-            "ice_blue": "Ice Blue",
+            "iceBlue": "Ice Blue",
             "lime": "Lime",
             "magenta": "Magenta",
             "mint": "Mint",

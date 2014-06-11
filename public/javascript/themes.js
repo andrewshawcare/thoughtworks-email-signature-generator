@@ -18,7 +18,7 @@ define([], function () {
             "color": "rgb(17, 170, 88)",
             "logoUrl": "./images/thoughtworks_logo_green.png"
         },
-        "ice_blue": {
+        "iceBlue": {
             "color": "rgb(128, 201, 210)",
             "logoUrl": "./images/thoughtworks_logo_ice_blue.png"
         },
