@@ -13,7 +13,8 @@ define(["react"], function (React) {
                         "Arial," +
                         "sans-serif",
                     "fontSize": "12px", 
-                    "color":"#000"
+                    "color":"#333",
+                    "lineHeight": "1.6em"
                 }}>
                     <strong style={{"display": "block"}}>{this.props.name}</strong>
                     <em style={{
@@ -61,7 +62,7 @@ define(["react"], function (React) {
                 </div>
                 <a href={this.props.logo.href} style={{
                     "display": "block",
-                    "marginTop": "1em"
+                    "marginTop": "1.5em"
                 }}>
                     <img
                         src={this.props.logo.src}

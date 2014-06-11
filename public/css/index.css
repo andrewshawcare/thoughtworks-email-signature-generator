@@ -3,7 +3,9 @@ body {
     padding: 0;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 300;
+    line-height: 1.6em;
     color: #333;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {

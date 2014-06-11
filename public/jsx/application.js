@@ -125,6 +125,7 @@ define([
                             }}
                         />
                         <button className="button primary" onClick={this.selectSignature} style={{"backgroundColor": theme.color}}>{properties.selectSignatureLabel}</button>
+                        <p><strong>{properties.instructionsLead}</strong> {properties.instructions}</p>
                     </section>
                 </section>
                 <footer className="footer">

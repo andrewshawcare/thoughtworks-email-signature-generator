@@ -30,6 +30,8 @@ define([], function () {
             "warmth": "Warmth",
             "previewLabel": "Preview",
             "selectSignatureLabel": "Select Signature",
+            "instructionsLead": "After selecting your signature,",
+            "instructions": "you will need to manually copy and paste it into your email client.",
             "footnote": "Created by ThoughtWorks Toronto"
         }
     };
