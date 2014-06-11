@@ -164,8 +164,7 @@ define([
                             {properties.selectSignatureLabel}
                         </button>
                         <p>
-                            <strong>{properties.instructionsLead}</strong>
-                            {properties.instructions}
+                            <strong>{properties.instructionsLead}</strong> {properties.instructions}
                         </p>
                     </section>
                 </section>
