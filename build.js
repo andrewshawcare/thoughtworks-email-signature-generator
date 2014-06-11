@@ -1,3 +1,4 @@
+// jshint -W033
 (function () {
     "use strict";
     var onBuildWrite = function (moduleName, path, contents) {
@@ -28,4 +29,4 @@
             }
         ]
     };
-})() // jshint -W033
+})()
