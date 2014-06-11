@@ -37,7 +37,7 @@ define(["react"], function (React) {
                                 "display": "inline-block",
                                 "margin": "0"
                             }}>
-                                <a href={"mailto:" + this.props.email.value} style={{
+                                <a className="transition" href={"mailto:" + this.props.email.value} style={{
                                     "textDecoration": "none",
                                     "color": this.props.color
                                 }}>{this.props.email.value}</a>
@@ -52,7 +52,7 @@ define(["react"], function (React) {
                                 "display": "inline-block",
                                 "margin": "0"
                             }}>
-                                <a href={"tel:" + this.props.telephone.value} style={{
+                                <a className="transition" href={"tel:" + this.props.telephone.value} style={{
                                     "textDecoration": "none",
                                     "color": this.props.color
                                 }}>{this.props.telephone.value}</a>

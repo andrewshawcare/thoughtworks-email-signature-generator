@@ -32,10 +32,6 @@ input, textarea, select, button {
     border-radius: 0;
 }
 
-button {
-    transition: all 0.2s ease-in;
-}
-
 button:hover {
     -webkit-transform: translate(0px, -2px);
     -moz-transform: translate(0px, -2px);
@@ -43,6 +39,9 @@ button:hover {
     -o-transform: translate(0px, -2px);
     transform: translate(0px, -2px);
     opacity: 0.85;
+}
+
+.transition {
     transition: all 0.2s ease-out;
 }
 
@@ -76,6 +75,7 @@ label {
     color: #fff;
     padding: 0.5em;
     text-align: right;
+    transition: all 0.2s ease-out;
 }
 
 @media (min-width: 768px) {

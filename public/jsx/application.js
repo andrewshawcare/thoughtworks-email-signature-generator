@@ -61,7 +61,7 @@ define([
             // jshint -W064
             return <article className="application">
                 <header>
-                    <div className="languageMenu" style={{"backgroundColor": theme.color}}>
+                    <div className="languageMenu transition" style={{"backgroundColor": theme.color}}>
                         <Select
                             className="languageSelect"
                             name="language"
@@ -120,7 +120,7 @@ define([
                             onChange={this.handleTelephoneChange}
                         />
                         <Select
-                            className="primary"
+                            className="primary transition"
                             style={{"backgroundColor": theme.color}}
                             name="theme"
                             label={properties.themeLabel}
@@ -158,7 +158,7 @@ define([
                             }}
                         />
                         <button
-                            className="button primary"
+                            className="button primary transition"
                             onClick={this.selectSignature}
                             style={{"backgroundColor": theme.color}}>
                             {properties.selectSignatureLabel}
