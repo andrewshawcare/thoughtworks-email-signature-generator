@@ -59,9 +59,12 @@ module.exports = function (grunt) {
                         failOnError: true
                     },
                     jsxhint: {
-                        command: "node node_modules/jsxhint/cli " +
+                        command: "node ./node_modules/jsxhint/cli " +
                             "-c ./.jsxhintrc " +
                             globs.jsx.join(" ")
+                    },
+                    build: {
+                        command: "node ./node_modules/requirejs/bin/r.js -o ./build.js"
                     }
                 }
             },
