@@ -111,10 +111,12 @@ module.exports = function (grunt) {
         ]
     });
 
-    grunt.registerTask("default", [
+    grunt.registerTask("test", [
         "jshint",
         "csslint",
         "htmlhint",
-        "shell:jsxhint"
+        "shell:jsxhint",
     ]);
+
+    grunt.registerTask("report", ["plato"]);
 };
