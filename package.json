@@ -6,26 +6,26 @@
   "scripts": {
     "test": "grunt test"
   },
-  "repositories": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/andrewshawcare/thoughtworks-email-signature-generator.git"
   },
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "newrelic": "~1.7.0",
-    "express": "~4.4.1",
+    "newrelic": "~1.7.1",
+    "express": "~4.4.2",
     "compression": "~1.0.6"
   },
   "devDependencies": {
-    "grunt": "~0.4.4",
+    "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-jshint": "~0.9.2",
     "grunt-contrib-csslint": "~0.2.0",
     "grunt-shell": "~0.7.0",
     "grunt-htmlhint": "~0.4.0",
     "grunt-plato": "~1.0.0",
-    "jsxhint": "~0.4.4",
+    "jsxhint": "~0.4.10",
     "requirejs": "~2.1.14"
   },
   "engines": {
