@@ -17,6 +17,7 @@ strong {
 }
 
 input, textarea, select, button {
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -114,6 +115,9 @@ label {
 
 @media (min-width: 768px) {
     .details {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         float: left;
         width: 21em;
         margin: 1em;
@@ -136,6 +140,7 @@ label {
 
 @media (min-width: 768px) {
     .signature {
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: 1em;

@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         jsx: [baseDirectory + "jsx/**.js"],
         json: [".htmlhintrc", ".jshintrc", "*.json"],
         css: [baseDirectory + "css/**/*.css"],
-        html: ["*.html"]
+        html: [baseDirectory + "*.html"]
     };
 
     loadNpmTasks({
@@ -42,14 +42,11 @@ module.exports = function (grunt) {
                     html: {
                         files: globs.html,
                         tasks: ["htmlhint"]
+                    },
+                    jsx: {
+                        files: globs.jsx,
+                        tasks: ["shell:jsxhint"]
                     }
-                }
-            },
-            {
-                id: "connect",
-                name: "grunt-contrib-connect",
-                configuration: {
-                    default: {}
                 }
             },
             {
@@ -82,6 +79,9 @@ module.exports = function (grunt) {
                 id: "csslint",
                 name: "grunt-contrib-csslint",
                 configuration: {
+                    options: {
+                        csslintrc: "./.csslintrc"
+                    },
                     src: globs.css
                 }
             },
@@ -108,5 +108,10 @@ module.exports = function (grunt) {
         ]
     });
 
-    grunt.registerTask("default", ["connect", "watch"]);
+    grunt.registerTask("default", [
+        "jshint",
+        "csslint",
+        "htmlhint",
+        "shell:jsxhint"
+    ]);
 };

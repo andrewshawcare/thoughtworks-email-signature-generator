@@ -23,25 +23,26 @@ define([
                 theme: this.props.theme
             };
         },
-        handleLanguageChange: function (language, event) {
+        handleLanguageChange: function (language) {
             this.setState({language: language});
         },
-        handleNameChange: function (name, event) {
+        handleNameChange: function (name) {
             this.setState({name: name});
         },
-        handleTitleChange: function (title, event) {
+        handleTitleChange: function (title) {
             this.setState({title: title});
         },
-        handleEmailChange: function (email, event) {
+        handleEmailChange: function (email) {
             this.setState({email: email});
         },
-        handleTelephoneChange: function (telephone, event) {
+        handleTelephoneChange: function (telephone) {
             this.setState({telephone: telephone});
         },
-        handleThemeChange: function (theme, event) {
+        handleThemeChange: function (theme) {
             this.setState({theme: theme});
         },
         selectSignature: function () {
+            /* global window, document */
             var selection = window.getSelection(),
                 range = document.createRange(),
                 node = this.refs.signature.getDOMNode();
@@ -57,6 +58,7 @@ define([
             // FIXME: Figure out an elegant solution to updating the title
             document.title = properties.title;
             
+            // jshint -W064
             return <article className="application">
                 <header>
                     <div className="languageMenu" style={{"backgroundColor": theme.color}}>
@@ -69,23 +71,54 @@ define([
                                 return {
                                     "label": properties[language],
                                     "value": language
-                                }
+                                };
                             }.bind(this))}
                             onChange={this.handleLanguageChange}
                         />
                     </div>
                     <a href={properties.thoughtworksUrl}>
-                        <img className="logo" src={this.props.themes.black.logoUrl} width="200" height="31" alt={properties.thoughtworksLabel} title={properties.thoughtworksLabel}/>
+                        <img
+                            className="logo"
+                            src={this.props.themes.black.logoUrl}
+                            width="200"
+                            height="31"
+                            alt={properties.thoughtworksLabel}
+                            title={properties.thoughtworksLabel}
+                        />
                     </a>
                     <h1 className="title">{properties.title}</h1>
                     <p className="subtitle">{properties.subtitle}</p>
                 </header>
                 <section className="generator">
                     <form className="details">
-                        <Input id="name" type="text" label={properties.nameLabel} value={this.state.name} onChange={this.handleNameChange}/>
-                        <Input id="title" type="text" label={properties.titleLabel} value={this.state.title} onChange={this.handleTitleChange}/>
-                        <Input id="email" type="email" label={properties.emailLabel} value={this.state.email} onChange={this.handleEmailChange}/>
-                        <Input id="telephone" type="tel" label={properties.telephoneLabel} value={this.state.telephone} onChange={this.handleTelephoneChange}/>
+                        <Input
+                            id="name"
+                            type="text"
+                            label={properties.nameLabel}
+                            value={this.state.name}
+                            onChange={this.handleNameChange}
+                        />
+                        <Input
+                            id="title"
+                            type="text"
+                            label={properties.titleLabel}
+                            value={this.state.title}
+                            onChange={this.handleTitleChange}
+                        />
+                        <Input
+                            id="email"
+                            type="email"
+                            label={properties.emailLabel}
+                            value={this.state.email}
+                            onChange={this.handleEmailChange}
+                        />
+                        <Input
+                            id="telephone"
+                            type="tel"
+                            label={properties.telephoneLabel}
+                            value={this.state.telephone}
+                            onChange={this.handleTelephoneChange}
+                        />
                         <Select
                             className="primary"
                             style={{"backgroundColor": theme.color}}
@@ -96,7 +129,7 @@ define([
                                 return {
                                     "label": properties[theme],
                                     "value": theme
-                                }
+                                };
                             }.bind(this))}
                             onChange={this.handleThemeChange}
                         />
@@ -124,8 +157,16 @@ define([
                                 value: this.state.telephone
                             }}
                         />
-                        <button className="button primary" onClick={this.selectSignature} style={{"backgroundColor": theme.color}}>{properties.selectSignatureLabel}</button>
-                        <p><strong>{properties.instructionsLead}</strong> {properties.instructions}</p>
+                        <button
+                            className="button primary"
+                            onClick={this.selectSignature}
+                            style={{"backgroundColor": theme.color}}>
+                            {properties.selectSignatureLabel}
+                        </button>
+                        <p>
+                            <strong>{properties.instructionsLead}</strong>
+                            {properties.instructions}
+                        </p>
                     </section>
                 </section>
                 <footer className="footer">

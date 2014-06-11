@@ -9,9 +9,19 @@ define(["react"], function (React) {
         render: function () {
             return <div>
                 <label>{this.props.label}</label>
-                <select name={this.props.name} value={this.props.value} onChange={this.handleChange} className={this.props.className} style={this.props.style}>
+                <select
+                    name={this.props.name}
+                    value={this.props.value}
+                    onChange={this.handleChange}
+                    className={this.props.className}
+                    style={this.props.style}>
                     {this.props.options.map(function (option) {
-                        return <option key={option.value} value={option.value} label={option.label}>{option.label}</option>;
+                        return <option
+                            key={option.value}
+                            value={option.value}
+                            label={option.label}>
+                            {option.label}
+                        </option>;
                     })}
                 </select>
             </div>;

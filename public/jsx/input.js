@@ -7,6 +7,7 @@ define(["react"], function (React) {
             this.props.onChange(event.target.value, event);
         },
         handleFocus: function (event) {
+            /* global setTimeout */
             // Timeout added to fix flaky selection persistence on Chrome
             setTimeout(function () {
                 this.select();
@@ -15,7 +16,14 @@ define(["react"], function (React) {
         render: function () {
             return <div>
                 <label htmlFor={this.props.id}>{this.props.label}</label>
-                <input id={this.props.id} onFocus={this.handleFocus} name={this.props.name} type={this.props.type} value={this.props.value} onChange={this.handleChange}/>
+                <input
+                    id={this.props.id}
+                    onFocus={this.handleFocus}
+                    name={this.props.name}
+                    type={this.props.type}
+                    value={this.props.value}
+                    onChange={this.handleChange}
+                />
             </div>;
         }
     });

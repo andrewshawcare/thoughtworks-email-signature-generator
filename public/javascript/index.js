@@ -9,7 +9,14 @@ requirejs.config({
     }
 });
 
-require(["react", "jsx!../jsx/application", "properties", "themes", "defaults"], function (React, Application, properties, themes, defaults) {
+// jshint -W072
+require([
+    "react",
+    "jsx!../jsx/application",
+    "properties",
+    "themes",
+    "defaults"
+], function (React, Application, properties, themes, defaults) {
     "use strict";
     /* global document */
     React.renderComponent(new Application({
