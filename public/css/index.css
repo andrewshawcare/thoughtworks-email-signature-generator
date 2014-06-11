@@ -29,9 +29,26 @@ input, textarea, select, button {
     background-color: #ebebeb;
     color: #666;
     border: none;
+    border-radius: 0;
+}
+
+button {
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    -webkit-transform: translate(0px, -2px);
+    -moz-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    -o-transform: translate(0px, -2px);
+    transform: translate(0px, -2px);
+    opacity: 0.85;
+    transition: all 0.2s ease-out;
+}
+
+input {
     border-bottom: 2px solid #fff;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
 
 select {
