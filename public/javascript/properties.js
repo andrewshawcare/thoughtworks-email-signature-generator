@@ -5,6 +5,7 @@ define([], function () {
         "en": {
             "languageLabel": "Language",
             "en": "English",
+            "zh": "中文",
             "thoughtworksLabel": "ThoughtWorks",
             "thoughtworksUrl": "http://www.thoughtworks.com/",
             "title": "Email Signature Generator",
@@ -33,6 +34,40 @@ define([], function () {
             "instructionsLead": "After selecting your signature,",
             "instructions": "you will need to manually copy and paste it into your email client.",
             "footnote": "Created by ThoughtWorks Toronto"
+        },
+
+        "zh": {
+            "languageLabel": "语言",
+            "zh": "中文",
+            "en": "English",
+            "thoughtworksLabel": "ThoughtWorks",
+            "thoughtworksUrl": "http://www.thoughtworks.com/",
+            "title": "邮件签名生成器",
+            "subtitle": "填写您的个人信息，我们会为您生成名片.",
+            "nameLabel": "姓名",
+            "titleLabel": "头衔",
+            "emailLabel": "邮箱",
+            "telephoneLabel": "电话",
+            "themeLabel": "主题",
+            "black": "黑色",
+            "blue": "蓝色",
+            "earth": "陶色",
+            "green": "绿色",
+            "iceBlue": "冰蓝",
+            "lime": "绿黄",
+            "magenta": "洋红",
+            "mint": "薄荷绿",
+            "ocean": "海蓝",
+            "orange": "橙色",
+            "pink": "粉红",
+            "plum": "紫红",
+            "red": "大红",
+            "warmth": "暖红",
+            "previewLabel": "预览",
+            "selectSignatureLabel": "选中签名",
+            "instructionsLead": "选中签名之后,",
+            "instructions": "您需要手工的拷贝选中内容，然后粘贴到邮件客户端中.",
+            "footnote": "由 ThoughtWorks 多伦多办公室创建"
         }
     };
 });
