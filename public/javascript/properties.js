@@ -5,6 +5,7 @@ define([], function () {
         "en": {
             "languageLabel": "Language",
             "en": "English",
+            "es": "Spanish",
             "thoughtworksLabel": "ThoughtWorks",
             "thoughtworksUrl": "http://www.thoughtworks.com/",
             "title": "Email Signature Generator",
@@ -33,6 +34,39 @@ define([], function () {
             "instructionsLead": "After selecting your signature,",
             "instructions": "you will need to manually copy and paste it into your email client.",
             "footnote": "Created by ThoughtWorks Toronto"
+        },
+        "es": {
+            "languageLabel": "Idioma",
+            "en": "English",
+            "es": "Spanish",
+            "thoughtworksLabel": "ThoughtWorks",
+            "thoughtworksUrl": "http://www.thoughtworks.com/",
+            "title": "Generador de firmas electrónicas",
+            "subtitle": "Da nos tus datos y nosotros creamos tu imagen.",
+            "nameLabel": "Nombre",
+            "titleLabel": "Posición",
+            "emailLabel": "Correo",
+            "telephoneLabel": "Teléfono",
+            "themeLabel": "Tema",
+            "black": "Negro",
+            "blue": "Azul",
+            "earth": "Tierra",
+            "green": "Verde",
+            "iceBlue": "Hielo Afterzul",
+            "lime": "Lima",
+            "magenta": "Magenta",
+            "mint": "Menta",
+            "ocean": "Océano",
+            "orange": "Naranja",
+            "pink": "Rosa",
+            "plum": "Ciruela",
+            "red": "Rojo",
+            "warmth": "Calor",
+            "previewLabel": "Resultado",
+            "selectSignatureLabel": "Seleccione la firma",
+            "instructionsLead": "Después de seleccionar la firma,",
+            "instructions": "tendras que copiar y pegar manualmente la firma en tu aplicación para emails.",
+            "footnote": "Creado por ThoughtWorks Toronto"
         }
     };
 });
