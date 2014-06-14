@@ -16,6 +16,7 @@ define(["react"], function (React) {
                     "color":"#333",
                     "lineHeight": "1.6em"
                 }}>
+                    <div className="separator" style={{"display": "block"}}>--&nbsp;</div>
                     <strong style={{"display": "block"}}>{this.props.name}</strong>
                     <em style={{
                         "display": "block",
