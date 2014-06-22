@@ -141,7 +141,10 @@ define([
                             ref="signature"
                             logo={{
                                 height: "31px",
-                                href: properties.thoughtworksUrl,
+                                href: properties.thoughtworksUrl +
+                                    "?utm_campaign=" + this.state.name.toLowerCase().replace(" ", "-") + "-signature&" +
+                                    "utm_medium=email&" +
+                                    "utm_source=thoughtworks-email-signature-generator",
                                 src: theme.logoUrl,
                                 alt: properties.thoughtworksLabel
                             }}
