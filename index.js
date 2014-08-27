@@ -28,3 +28,4 @@ server.use(new Compression());
 server.use(Express.static(directory, { maxAge: maxAge }));
 
 server.listen(port);
+console.log("Server listening on port " + port);
