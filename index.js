@@ -1,4 +1,4 @@
-/* global require, process, __dirname */
+/* global require, process, __dirname, console */
 require("newrelic");
 var NewRelic = require("newrelic"),
     Express = require("express"),
