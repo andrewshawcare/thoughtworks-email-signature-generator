@@ -5,66 +5,35 @@ define(["react"], function (React) {
     return React.createClass({
         render: function () {
             return <div className={this.props.className} style={{"float": "left"}}>
-                <div style={{
-                    "fontFamily": "'OpenSans-Light'," +
+                <table cellSpacing="0" cellPadding="0" border="0" style={{
+                    "fontSize": "12px",
+                    "fontWeight": "normal",
+                    "fontFamily": "OpenSans-Light," +
                         "'Open Sans Light'," +
+                        "OpenSans," +
                         "'Open Sans'," +
                         "'Helvetica Neue'," +
+                        "Helvetica," +
                         "Arial," +
                         "sans-serif",
-                    "fontSize": "12px", 
-                    "color":"#333",
-                    "lineHeight": "1.6em"
+                    "lineHeight": "12px"
                 }}>
-                    <strong style={{"display": "block"}}>{this.props.name}</strong>
-                    <em style={{
-                        "display": "block",
-                        "fontFamily": "'OpenSansLight-Italic'," +
-                            "'Open Sans Light Italic'," +
-                            "'Open Sans'," +
-                            "'Helvetica Neue'," +
-                            "Arial," +
-                            "sans-serif",
-                        "fontStyle": "italic"
-                    }}>{this.props.title}</em>
-                    <dl style={{}}>
-                        <div>
-                            <dt style={{
-                                "display": "inline-block",
-                                "minWidth": "6em"
-                            }}>{this.props.email.label}</dt>
-                            <dd style={{
-                                "display": "inline-block",
-                                "margin": "0"
-                            }}>
-                                <a className="transition" href={"mailto:" + this.props.email.value} style={{
-                                    "textDecoration": "none",
-                                    "color": this.props.color
-                                }}>{this.props.email.value}</a>
-                            </dd>
-                        </div>
-                        <div>
-                            <dt style={{
-                                "display": "inline-block",
-                                "minWidth": "6em"
-                            }}>{this.props.telephone.label}</dt>
-                            <dd style={{
-                                "display": "inline-block",
-                                "margin": "0"
-                            }}>
-                                <a className="transition" href={"tel:" + this.props.telephone.value} style={{
-                                    "textDecoration": "none",
-                                    "color": this.props.color
-                                }}>{this.props.telephone.value}</a>
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-                <a href={this.props.logo.href} style={{
-                    "display": "block",
-                    "marginTop": "1.5em"
-                }}>
-                    <img
+                    <tr>
+                        <td width="300" colSpan="2" style={{"paddingBottom": "2px", "fontWeight": "bold"}}>{this.props.name}</td>
+                    </tr>
+                    <tr>
+                        <td width="300" colSpan="2" style={{"fontStyle": "italic"}}>{this.props.title}</td>
+                    </tr>
+                    <tr>
+                        <td width="75" style={{"paddingTop": "12px", "paddingBottom": "2px"}}>{this.props.email.label}</td>
+                        <td width="225" style={{"paddingTop": "12px", "paddingBottom": "2px"}}><a className="transition" href={"mailto:" + this.props.email.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.email.value}</span></a></td>
+                    </tr>
+                    <tr>
+                        <td width="75" style={{"paddingBottom": "12px"}}>{this.props.telephone.label}</td>
+                        <td width="225" style={{"paddingBottom": "12px"}}><a className="transition" href={"mailto:" + this.props.telephone.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.telephone.value}</span></a></td>
+                    </tr>
+                    <tr>
+                        <td width="300" colSpan="2"><img
                         src={this.props.logo.src}
                         width="200"
                         height="31"
@@ -74,8 +43,9 @@ define(["react"], function (React) {
                             "borderStyle": "none",
                             "display": "block"
                         }}
-                    />
-                </a>
+                    /></td>
+                    </tr>
+                </table>
             </div>;
         }
     });

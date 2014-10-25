@@ -19,5 +19,5 @@
     "maxdepth": 2,
     "maxstatements": 4,
     "maxcomplexity": 5,
-    "maxlen": 120
+    "maxlen": 0
 }
