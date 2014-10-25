@@ -22,3 +22,14 @@ package {'grunt-cli':
     ensure => installed,
     provider => 'npm'
 }
+
+package {'ruby1.9.3':
+    require => Exec['apt-get update'],
+    ensure => installed
+}
+
+package {'foreman':
+    require => Package['ruby1.9.3'],
+    ensure => installed,
+    provider => 'gem'
+}

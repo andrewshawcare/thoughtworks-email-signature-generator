@@ -12,5 +12,6 @@ file {'puppet module directory':
 }
 
 exec {'puppet module install puppetlabs/nodejs':
-    require => File['puppet module directory']
+    require => File['puppet module directory'],
+    creates => '/etc/puppet/modules/nodejs'
 }
