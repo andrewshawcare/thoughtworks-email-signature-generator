@@ -33,7 +33,7 @@ define(["react"], function (React) {
                         <td width="225" style={{"paddingBottom": "12px"}}><a className="transition" href={"mailto:" + this.props.telephone.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.telephone.value}</span></a></td>
                     </tr>
                     <tr>
-                        <td width="300" colSpan="2"><img
+                        <td width="300" colSpan="2"><a href={this.props.logo.href}><img
                         src={this.props.logo.src}
                         width="200"
                         height="31"
@@ -43,7 +43,7 @@ define(["react"], function (React) {
                             "borderStyle": "none",
                             "display": "block"
                         }}
-                    /></td>
+                    /></a></td>
                     </tr>
                 </table>
             </div>;
