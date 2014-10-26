@@ -19,14 +19,14 @@ define(["react"], function (React) {
                     "lineHeight": "12px"
                 }}>
                     <tr>
-                        <td width="300" colSpan="2" style={{"paddingBottom": "2px", "fontWeight": "bold"}}>{this.props.name}</td>
+                        <td width="300" colSpan="2" style={{"paddingBottom": "4px", "fontWeight": "bold"}}>{this.props.name}</td>
                     </tr>
                     <tr>
                         <td width="300" colSpan="2" style={{"fontStyle": "italic"}}>{this.props.title}</td>
                     </tr>
                     <tr>
-                        <td width="75" style={{"paddingTop": "12px", "paddingBottom": "2px"}}>{this.props.email.label}</td>
-                        <td width="225" style={{"paddingTop": "12px", "paddingBottom": "2px"}}><a className="transition" href={"mailto:" + this.props.email.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.email.value}</span></a></td>
+                        <td width="75" style={{"paddingTop": "12px", "paddingBottom": "4px"}}>{this.props.email.label}</td>
+                        <td width="225" style={{"paddingTop": "12px", "paddingBottom": "4px"}}><a className="transition" href={"mailto:" + this.props.email.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.email.value}</span></a></td>
                     </tr>
                     <tr>
                         <td width="75" style={{"paddingBottom": "12px"}}>{this.props.telephone.label}</td>
