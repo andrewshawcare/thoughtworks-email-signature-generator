@@ -117,7 +117,7 @@ label {
 
 @media (min-width: 768px) {
     .generator {
-        width: 48em;
+        width: 47em;
         margin: 0 auto 1em auto;
         overflow: auto;
         background-color: #f9f9f9;
