@@ -24,7 +24,7 @@ server.get("/", function (request, response) {
     "use strict";
     response.render("index.jade");
 });
-server.use(new Compression());
+server.use(Compression());
 server.use(Express.static(directory, { maxAge: maxAge }));
 
 server.listen(port);
