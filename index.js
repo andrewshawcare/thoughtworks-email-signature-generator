@@ -20,12 +20,13 @@ var NewRelic = require("newrelic"),
 server.locals.newrelic = NewRelic;
 server.set("views", __dirname + "/views");
 server.engine("jade", Jade.__express);
+server.use(compression());
+server.use(Express.static(directory, { maxAge: maxAge }));
+
 server.get("/", function (request, response) {
     "use strict";
     response.render("index.jade");
 });
-server.use(compression());
-server.use(Express.static(directory, { maxAge: maxAge }));
 
 server.listen(port);
 console.log("Server listening on port " + port);
