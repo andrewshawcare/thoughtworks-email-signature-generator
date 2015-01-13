@@ -3,6 +3,7 @@ require("newrelic");
 var Express = require("express"),
     newrelic = require("newrelic"),
     compression = require("compression"),
+    serveStatic = require('serve-static'),
     jade = require("jade"),
     port = Number(process.env.PORT || 5000),
     server = new Express(),
@@ -20,7 +21,7 @@ var Express = require("express"),
 server.locals.newrelic = newrelic;
 
 server.use(compression());
-server.use(Express.static(directory, { maxAge: maxAge }));
+server.use(serveStatic(directory, { maxAge: maxAge }));
 
 server.set("views", __dirname + "/views");
 server.engine("jade", jade.__express);
