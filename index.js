@@ -2,7 +2,7 @@
 require("newrelic");
 var NewRelic = require("newrelic"),
     Express = require("express"),
-    Compression = require("compression"),
+    compression = require("compression"),
     Jade = require("jade"),
     port = Number(process.env.PORT || 5000),
     server = new Express(),
@@ -24,7 +24,7 @@ server.get("/", function (request, response) {
     "use strict";
     response.render("index.jade");
 });
-server.use(Compression());
+server.use(compression());
 server.use(Express.static(directory, { maxAge: maxAge }));
 
 server.listen(port);
