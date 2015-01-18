@@ -1,9 +1,6 @@
 // jshint -W033
 (function () {
     "use strict";
-    var onBuildWrite = function (moduleName, path, contents) {
-        return contents.replace(/jsx!/g, '');
-    };
     return {
         appDir: "./public",
         baseUrl: "./javascript",
@@ -17,7 +14,10 @@
             JSXTransformer: "../bower_components/jsx-requirejs-plugin/js/JSXTransformer-0.10.0"
         },
         preserveLicenseComments: false,
-        onBuildWrite: onBuildWrite,
+        // Remove any occurrences of jsx! prefix for JSX imports
+        onBuildWrite: function (moduleName, path, contents) {
+            return contents.replace(/jsx!/g, '');
+        },
         useStrict: true,
         modules: [
             {
