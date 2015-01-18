@@ -12,14 +12,14 @@ requirejs.config({
 // jshint -W072
 require([
     "react",
-    "jsx!../jsx/application",
+    "jsx!../jsx/email_signature_generator",
     "properties",
     "themes",
     "defaults"
-], function (React, Application, properties, themes, defaults) {
+], function (React, EmailSignatureGenerator, properties, themes, defaults) {
     "use strict";
     /* global document */
-    React.renderComponent(new Application({
+    React.renderComponent(new EmailSignatureGenerator({
         "languages": Object.keys(properties),
         "properties": properties,
         "themes": themes,
