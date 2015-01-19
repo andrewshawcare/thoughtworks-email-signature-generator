@@ -1,0 +1,17 @@
+[
+    {
+        "name": "test",
+        "tasks": [
+            "jshint",
+            "csslint",
+            "htmlhint",
+            "shell:jsxhint"
+        ]
+    },
+    {
+        "name": "report",
+        "tasks": [
+            "plato"
+        ]
+    }
+]

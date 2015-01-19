@@ -1,0 +1,8 @@
+{
+    "javascript": ["*.js", "./npm_tasks/*.js", "./public/javascript/**/*.js"],
+    "jsx": ["./public/jsx/**.js"],
+    "json": [".htmlhintrc", ".jshintrc", "*.json", "./npm_tasks/.json"],
+    "css": ["./public/css/**/*.css"],
+    "less": ["./public/less/**/*.less"],
+    "html": ["./public/*.html"]
+}
