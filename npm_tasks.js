@@ -1,15 +1,17 @@
-/* global module */
-module.exports = function (grunt) {
+/* global module, require */
+module.exports = (function () {
     "use strict";
-    var baseDirectory = "./public/";
-    var globs = {
-        javascript: ["*.js", baseDirectory + "javascript/**/*.js"],
-        jsx: [baseDirectory + "jsx/**.js"],
-        json: [".htmlhintrc", ".jshintrc", "*.json"],
-        css: [baseDirectory + "css/**/*.css"],
-        less: [baseDirectory + "less/**/*.less"],
-        html: [baseDirectory + "*.html"]
-    };
+    var fs = require("fs"),
+        jshintrc = JSON.parse(fs.readFileSync("./.jshintrc")),
+        baseDirectory = "./public/",
+            globs = {
+            javascript: ["*.js", baseDirectory + "javascript/**/*.js"],
+            jsx: [baseDirectory + "jsx/**.js"],
+            json: [".htmlhintrc", ".jshintrc", "*.json"],
+            css: [baseDirectory + "css/**/*.css"],
+            less: [baseDirectory + "less/**/*.less"],
+            html: [baseDirectory + "*.html"]
+        };
     
     return {
         tasks: [
@@ -108,7 +110,7 @@ module.exports = function (grunt) {
                 name: "grunt-plato",
                 configuration: {
                     options: {
-                        jshint: grunt.file.readJSON(".jshintrc")
+                        jshint: jshintrc
                     },
                     "reports/plato": globs.javascript
                 }
@@ -132,4 +134,4 @@ module.exports = function (grunt) {
             }
         ]
     };
-};
+})();

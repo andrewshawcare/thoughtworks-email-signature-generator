@@ -1,7 +1,7 @@
 /* global module, require */
 module.exports = function (grunt) {
     "use strict";
-    var npmTasks = require("./npm_tasks")(grunt);
+    var npmTasks = require("./npm_tasks");
 
     npmTasks.tasks.forEach(function (task) {
         grunt.loadNpmTasks(task.name);
