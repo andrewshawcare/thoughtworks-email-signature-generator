@@ -1,6 +1,8 @@
 thoughtworks-email-signature-generator
 ======================================
 
+Generate an on-brand and cross-client email signature personalized with your details and preferences.
+
 [![Build Status](https://snap-ci.com/andrewshawcare/thoughtworks-email-signature-generator/branch/master/build_image)](https://snap-ci.com/andrewshawcare/thoughtworks-email-signature-generator/branch/master)
 
 [![Dependency Status](https://david-dm.org/andrewshawcare/thoughtworks-email-signature-generator.svg)](https://david-dm.org/andrewshawcare/thoughtworks-email-signature-generator)
@@ -12,5 +14,3 @@ thoughtworks-email-signature-generator
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/pr)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
 
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/issue)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
-
-Generate an on-brand and cross-client email signature personalized with your details and preferences.
