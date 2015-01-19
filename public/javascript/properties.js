@@ -1,4 +1,5 @@
 /* global define */
+/* jshint -W100 */
 define([], function () {
     "use strict";
     return {
