@@ -4,8 +4,8 @@ module.exports = function (grunt) {
     var fs = require("fs"),
         tasksDirectory = "./tasks/",
         taskNames = fs.readdirSync(tasksDirectory).filter(function (filename) {
-            // filter non-JavaScript files
-            return /.*\.js$/.test(filename);
+            // filter non-requireable files
+            return /.*\.(js|json)$/.test(filename);
         }),
         aggregateTasks = require(tasksDirectory + "data/aggregate_tasks");
 
