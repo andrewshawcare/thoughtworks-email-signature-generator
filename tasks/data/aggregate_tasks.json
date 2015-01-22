@@ -13,5 +13,12 @@
         "tasks": [
             "plato"
         ]
+    },
+    {
+        "name": "build",
+        "tasks": [
+            "less",
+            "shell:build"
+        ]
     }
 ]

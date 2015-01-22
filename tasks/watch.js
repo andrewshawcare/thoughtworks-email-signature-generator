@@ -19,13 +19,13 @@ module.exports = (function (globs) {
                 files: globs.json,
                 tasks: ["jshint"]
             },
-            css: {
-                files: globs.css,
-                tasks: ["csslint"]
-            },
             less: {
                 files: globs.less,
                 tasks: ["less"]
+            },
+            css: {
+                files: globs.css,
+                tasks: ["csslint"]
             },
             html: {
                 files: globs.html,

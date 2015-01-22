@@ -8,8 +8,16 @@ module.exports = (function () {
         id: "less",
         name: "grunt-contrib-less",
         configuration: {
-            options: {},
-            src: globs.less
+            development: {
+                options: {
+                    strictImports: true,
+                    strictMath: true,
+                    strictUnits: true
+                },
+                files: {
+                    "./public/css/index.css": globs.less
+                }
+            }
         }
     };
 })();
