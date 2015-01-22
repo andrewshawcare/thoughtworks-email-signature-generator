@@ -4,3 +4,5 @@ reports
 newrelic_agent.log
 .DS_Store
 *~
+.librarian
+.tmp

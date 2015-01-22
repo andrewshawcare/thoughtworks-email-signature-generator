@@ -1,0 +1,13 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-nodejs (0.7.1)
+      puppetlabs-apt (>= 0.0.3)
+      puppetlabs-stdlib (>= 2.0.0)
+    puppetlabs-stdlib (4.5.1)
+
+DEPENDENCIES
+  puppetlabs-nodejs (= 0.7.1)
+
