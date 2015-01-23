@@ -1,21 +1,23 @@
-.languageMenu {
-    margin: -1em -1em 0 -1em;
-    color: #fff;
-    padding: 0.5em;
-    text-align: right;
-    transition: all 0.2s ease-out;
+@import 'variables';
 
-    @media (min-width: 768px) {
+.languageMenu {
+    margin: -@spacing -@spacing 0 -@spacing;
+    color: white;
+    padding: (@spacing / 2);
+    text-align: right;
+    transition: all @animation-duration ease-out;
+
+    @media (min-width: @smartphone-width) {
         margin: 0;
     }
 
     label {
         display: inline-block;
-        margin: 0 0.5em 0 0;
+        margin: 0 (@spacing / 2) 0 0;
     }
 
     select {
-        height: 1.7em;
+        height: @line-height;
         padding: 0;
         display: inline-block;
         width: auto;

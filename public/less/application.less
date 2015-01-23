@@ -1,42 +1,45 @@
-.application {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    line-height: 1.6em;
-    color: #333;
-    margin: 1em;
+@import 'variables';
 
-    @media (min-width: 768px) {
+.application {
+    font-family: @font-family;
+    font-weight: @font-weight;
+    font-size: @font-size;
+    line-height: @line-height;
+    color: @dark-gray;
+    margin: @spacing;
+
+    @media (min-width: @smartphone-width) {
         margin: 0;
     }
 
     .transition {
-        transition: all 0.2s ease-out;
+        transition: all 0.2s ease-in;
     }
 
     .logo {
         display: block;
-        margin: 1.5em auto;
+        margin: (@spacing * 1.5) auto;
     }
 
     .title {
         text-align: center;
         text-transform: uppercase;
-        font-size: 3em;
-        line-height: 0.8em;
-        letter-spacing: -0.08em;
-        font-weight: 900;
+        font-size: (@font-size * 3);
+        line-height: (@line-height * 1.5);
+        letter-spacing: (-1 * @font-size / 5);
+        font-weight: (@font-weight * 3);
     }
 
     .subtitle {
         text-align: center;
-        font-size: 1.1em;
+        font-size: (@font-size * 1.1);
     }
 
     .footer {
-        color: #ccc;
+        color: @light-gray;
         text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: @smartphone-width) {
             clear: left;
         }
     }

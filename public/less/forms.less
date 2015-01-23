@@ -1,57 +1,53 @@
+@import 'variables';
+@import 'functions';
+
 .formControl() {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    #functions > .box-sizing(border-box);
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
     width: 100%;
-    padding: 0.5em;
-    background-color: #ebebeb;
-    color: #666;
+    padding: (@spacing / 2);
+    background-color: lighten(@light-gray, 15%);
+    color: lighten(@dark-gray, 30%);
     border: none;
     border-radius: 0;
-}
+};
 
 .primaryFormControl() {
     color: #fff;
-}
+};
 
 input {
-    .formControl;
+    .formControl();
     border-bottom: 2px solid #fff;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 select {
-    .formControl;
-    height: 2.5em;
+    .formControl();
+    height: (@font-size * 2.5);
     border-style: none;
 
     &.primary {
-        .primaryFormControl;
+        .primaryFormControl();
     }
 }
 
 button {
-    .formControl;
+    .formControl();
 
-    :hover {
-        -webkit-transform: translate(0px, -2px);
-        -moz-transform: translate(0px, -2px);
-        -ms-transform: translate(0px, -2px);
-        -o-transform: translate(0px, -2px);
-        transform: translate(0px, -2px);
+    &:hover {
+        #functions > .transform(translate(0px, -2px));
         opacity: 0.85;
     }
 
     &.primary {
-        .primaryFormControl;
+        .primaryFormControl();
     }
 }
 
 label {
     display: block;
-    margin: 0.5em 0 0.1em 0;
+    margin: (@spacing / 2) 0 (@spacing / 10) 0;
 }

@@ -1,13 +1,14 @@
-.signature {
-    margin-bottom: 1em;
+@import 'variables';
+@import 'functions';
 
-    @media (min-width: 768px) {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 1em;
+.signature {
+    margin-bottom: @spacing;
+
+    @media (min-width: @smartphone-width) {
+        #functions > .box-sizing(border-box);
+        padding: @spacing;
         width: 100%;
-        background-color: #fff;
-        border: 1px dashed #eee;
+        background-color: white;
+        border: 1px dashed @gray;
     }
 }
