@@ -1,35 +1,35 @@
-@media (min-width: 768px) {
-    .generator {
+@gray: #eee;
+
+.generator {
+    @media (min-width: 768px) {
         width: 47em;
         margin: 0 auto 1em auto;
         overflow: auto;
-        background-color: #f9f9f9;
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
+        background-color: lighten(@gray, 5%);
+        border-top: 1px solid @gray;
+        border-bottom: 1px solid @gray;
     }
-}
 
-.generator .details {
-    margin-bottom: 1em;
-}
+    .details {
+        margin-bottom: 1em;
 
-@media (min-width: 768px) {
-    .generator .details {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-        width: 21em;
-        margin: 1em;
-        padding-right: 1em;
-        border-right: 1px solid #eee;
+        @media (min-width: 768px) {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            float: left;
+            width: 21em;
+            margin: 1em;
+            padding-right: 1em;
+            border-right: 1px solid @gray;
+        }
     }
-}
 
-@media (min-width: 768px) {
-    .generator .preview {
-        float: left;
-        margin: 1em 1em 1em -1px;
-        width: 23em;
+    .preview {
+        @media (min-width: 768px) {
+            float: left;
+            margin: 1em 1em 1em -1px;
+            width: 23em;
+        }
     }
 }

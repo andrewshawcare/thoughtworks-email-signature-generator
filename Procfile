@@ -1,1 +1,1 @@
-web: grunt build; NODE_ENV=production node index.js
+web: node ./node_modules/grunt-cli/bin/grunt build; NODE_ENV=production node index.js

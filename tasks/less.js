@@ -15,7 +15,7 @@ module.exports = (function () {
                     strictUnits: true
                 },
                 files: {
-                    "./public/css/index.css": globs.less
+                    "public/css/index.css": globs.less
                 }
             }
         }
