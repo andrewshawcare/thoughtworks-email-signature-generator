@@ -1,1 +1,1 @@
-web: node ./node_modules/requirejs/bin/r.js -o build.js; NODE_ENV=production node index.js
+web: grunt build; NODE_ENV=production node index.js
