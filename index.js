@@ -3,6 +3,7 @@ require("newrelic");
 var Express = require("express"),
     newrelic = require("newrelic"),
     compression = require("compression"),
+    serveStatic = require('serve-static'),
     jade = require("jade"),
     port = Number(process.env.PORT || 5000),
     staticAssetsUrl = process.env.STATIC_ASSETS_URL || ".",
@@ -12,10 +13,7 @@ var Express = require("express"),
 server.locals.newrelic = newrelic;
 
 server.use(compression());
-if (staticAssetsUrl === ".") {
-    var serveStatic = require('serve-static');
-    server.use(serveStatic(__dirname + directory));
-}
+server.use(serveStatic(__dirname + directory));
 
 server.set("views", __dirname + directory + "/jade");
 server.engine("jade", jade.__express);
