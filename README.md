@@ -20,7 +20,7 @@ Generate an on-brand and cross-client email signature personalized with your det
 
 ### Getting Started
 
-To get started after cloning the repo:
+To run the application, execute the following commands from the project's working directory:
 
 1. `vagrant plugin install vagrant-librarian-puppet`
 2. `vagrant up`
