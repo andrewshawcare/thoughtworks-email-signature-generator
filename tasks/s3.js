@@ -13,7 +13,7 @@ module.exports = (function () {
                 secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
                 bucket: process.env.AWS_S3_BUCKET,
                 headers: {
-                    CacheControl: 1000*60*60*24*365
+                    CacheControl: 31536000 // One year
                 }
             },
             build: {
