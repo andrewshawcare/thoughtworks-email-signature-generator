@@ -1,5 +1,5 @@
-/* global module */
-module.exports = (function (globs) {
+/* global module, require */
+module.exports = (function () {
     "use strict";
     
     var globs = require("./data/globs");

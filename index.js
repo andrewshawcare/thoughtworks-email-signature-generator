@@ -6,7 +6,7 @@ var Express = require("express"),
     jade = require("jade"),
     port = Number(process.env.PORT || 5000),
     staticAssetsUrl = process.env.STATIC_ASSETS_URL || ".",
-    directory = process.env.NODE_ENV === "production" ? "/build" : "/public";
+    directory = process.env.NODE_ENV === "production" ? "/build" : "/public",
     server = new Express();
 
 server.locals.newrelic = newrelic;

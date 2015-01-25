@@ -1,11 +1,11 @@
 {
-    "javascript": ["*.js", "npm_tasks/*.js", "public/javascript/**/*.js"],
+    "javascript": ["*.js", "tasks/*.js", "public/javascript/**/*.js"],
     "jsx": ["public/jsx/**.js"],
-    "json": [".htmlhintrc", ".jshintrc", "*.json", "npm_tasks/.json"],
+    "json": [".htmlhintrc", ".jshintrc", "*.json", "tasks/.json"],
     "css": ["public/css/**/*.css"],
     "less": ["public/less/**/*.less"],
     "html": ["public/*.html"],
-    "static_assets": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"],
-    "hashed_static_assets": ["build/css/index.*.css", "build/images/*.png", "build/javascript/email_signature_generator.*.js", "build/bower_components/requirejs/require.*.js"],
-    "static_asset_references": ["build/javascript/themes.js", "build/jade/index.jade"]
+    "staticAssets": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"],
+    "hashedStaticAssets": ["build/css/index.*.css", "build/images/*.png", "build/javascript/email_signature_generator.*.js", "build/bower_components/requirejs/require.*.js"],
+    "staticAssetReferences": ["build/javascript/themes.js", "build/jade/index.jade"]
 }

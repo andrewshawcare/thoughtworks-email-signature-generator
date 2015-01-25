@@ -1,4 +1,4 @@
-/* global module */
+/* global module, require, process */
 module.exports = (function () {
     "use strict";
 
@@ -17,7 +17,7 @@ module.exports = (function () {
                 }
             },
             build: {
-                src: globs.hashed_static_assets
+                src: globs.hashedStaticAssets
             }
         }
     };

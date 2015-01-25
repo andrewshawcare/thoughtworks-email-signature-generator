@@ -1,4 +1,4 @@
-/* global module */
+/* global module, require */
 module.exports = (function () {
     "use strict";
 
@@ -12,8 +12,8 @@ module.exports = (function () {
                 fileNameFormat: "${name}.${hash}.${ext}"
             },
             build: {
-                src: globs.static_assets,
-                dest: globs.static_asset_references
+                src: globs.staticAssets,
+                dest: globs.staticAssetReferences
             }
         }
     };
