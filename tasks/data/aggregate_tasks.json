@@ -19,7 +19,8 @@
         "tasks": [
             "less",
             "shell:build",
-            "aws_s3"
+            "hashres",
+            "s3"
         ]
     }
 ]

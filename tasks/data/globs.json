@@ -5,5 +5,7 @@
     "css": ["public/css/**/*.css"],
     "less": ["public/less/**/*.less"],
     "html": ["public/*.html"],
-    "cdn": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"]
+    "static_assets": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"],
+    "hashed_static_assets": ["build/css/index.*.css", "build/images/*.png", "build/javascript/email_signature_generator.*.js", "build/bower_components/requirejs/require.*.js"],
+    "static_asset_references": ["build/javascript/themes.js", "build/jade/index.jade"]
 }

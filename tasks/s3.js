@@ -5,21 +5,19 @@ module.exports = (function () {
     var globs = require("./data/globs");
     
     return {
-        id: "aws_s3",
-        name: "grunt-aws-s3",
+        id: "s3",
+        name: "grunt-aws",
         configuration: {
             options: {
                 accessKeyId: process.env.AWS_ACCESS_KEY_ID,
                 secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-                bucket: process.env.AWS_S3_BUCKET
+                bucket: process.env.AWS_S3_BUCKET,
+                headers: {
+                    CacheControl: 1000*60*60*24*365
+                }
             },
             build: {
-                files: [
-                    {
-                        dest: "/",
-                        src: globs.cdn
-                    }
-                ]
+                src: globs.hashed_static_assets
             }
         }
     };

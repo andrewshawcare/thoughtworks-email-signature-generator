@@ -10,9 +10,13 @@ html
         link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700,800")
         script(src="#{staticAssetsUrl}/bower_components/requirejs/require.js")
         script.
+            var preserveFileExtension = function (path) {
+                return path + "?";
+            };
             require.config({
                 baseUrl: "#{staticAssetsUrl}/javascript",
                 paths: {
+                    email_signature_generator: preserveFileExtension("./email_signature_generator.js"),
                     react: "../bower_components/react/react",
                     text: "../bower_components/jsx-requirejs-plugin/js/text",
                     jsx: "../bower_components/jsx-requirejs-plugin/js/jsx",
