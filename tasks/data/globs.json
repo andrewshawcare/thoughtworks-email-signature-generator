@@ -7,5 +7,5 @@
     "html": ["public/*.html"],
     "staticAssets": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"],
     "hashedStaticAssets": ["build/css/index.*.css", "build/images/*.png", "build/javascript/email_signature_generator.*.js", "build/bower_components/requirejs/require.*.js"],
-    "staticAssetReferences": ["build/javascript/themes.js", "build/jade/index.jade"]
+    "staticAssetReferences": ["build/javascript/email_signature_generator.*.js", "build/jade/index.jade"]
 }

@@ -7,3 +7,4 @@ newrelic_agent.log
 .librarian
 .tmp
 public/css/*.css
+node_modules/grunt-aws/caches/**
