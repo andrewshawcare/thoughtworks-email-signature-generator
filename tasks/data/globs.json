@@ -4,5 +4,6 @@
     "json": [".htmlhintrc", ".jshintrc", "*.json", "npm_tasks/.json"],
     "css": ["public/css/**/*.css"],
     "less": ["public/less/**/*.less"],
-    "html": ["public/*.html"]
+    "html": ["public/*.html"],
+    "cdn": ["build/css/index.css", "build/images/*.png", "build/javascript/email_signature_generator.js", "build/bower_components/requirejs/require.js"]
 }

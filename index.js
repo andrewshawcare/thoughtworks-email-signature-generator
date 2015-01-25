@@ -3,32 +3,25 @@ require("newrelic");
 var Express = require("express"),
     newrelic = require("newrelic"),
     compression = require("compression"),
-    serveStatic = require('serve-static'),
     jade = require("jade"),
     port = Number(process.env.PORT || 5000),
-    server = new Express(),
-    /*
-        1,000 milliseconds/second *
-        60 seconds/minute *
-        60 minutes/hour *
-        24 hours/day *
-        365 days/year =
-        1 year
-    */
-    maxAge = 1000 * 60 * 60 * 24 * 365,
-    directory = __dirname + (server.settings.env === "production" ? "/build" : "/public");
+    staticAssetsUrl = process.env.STATIC_ASSETS_URL || ".",
+    server = new Express();
 
 server.locals.newrelic = newrelic;
 
 server.use(compression());
-server.use(serveStatic(directory, { maxAge: maxAge }));
+if (staticAssetsUrl === ".") {
+    var serveStatic = require('serve-static');
+    server.use(serveStatic(__dirname + "/public"));
+}
 
 server.set("views", __dirname + "/views");
 server.engine("jade", jade.__express);
 
 server.get("/", function (request, response) {
     "use strict";
-    response.render("index.jade");
+    response.render("index.jade", {staticAssetsUrl: staticAssetsUrl});
 });
 
 server.listen(port);

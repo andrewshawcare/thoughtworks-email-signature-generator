@@ -21,7 +21,7 @@
         useStrict: true,
         modules: [
             {
-                "name": "index",
+                "name": "email_signature_generator",
                 "exclude": ["jsx"]
             },
             {

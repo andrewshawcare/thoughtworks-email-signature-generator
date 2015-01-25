@@ -18,7 +18,8 @@
         "name": "build",
         "tasks": [
             "less",
-            "shell:build"
+            "shell:build",
+            "aws_s3"
         ]
     }
 ]
