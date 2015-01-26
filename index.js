@@ -13,7 +13,8 @@ var Express = require("express"),
 server.locals.newrelic = newrelic;
 
 server.use(compression());
-server.use(serveStatic(__dirname + directory));
+// This is required to serve legacy copied email signatures
+server.use(serveStatic(__dirname + "/public"));
 
 server.set("views", __dirname + directory + "/jade");
 server.engine("jade", jade.__express);
