@@ -20,6 +20,7 @@ server.engine("jade", jade.__express);
 
 server.get("/", function (request, response) {
     "use strict";
+    response.set("Cache-Control", "no-cache");
     response.render("index.jade", {staticAssetsUrl: staticAssetsUrl});
 });
 
