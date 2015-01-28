@@ -55,6 +55,12 @@ define([], function () {
                 "color": "rgb(238, 49, 45)",
                 "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_red.png"
             },
+
+            "rot": {
+                "color": "rgb(238, 49, 45)",
+                "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_red.png"
+            },
+
             "warmth": {
                 "color": "rgb(158, 120, 95)",
                 "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_warmth.png"
