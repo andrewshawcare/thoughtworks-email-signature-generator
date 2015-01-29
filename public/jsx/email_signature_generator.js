@@ -52,16 +52,23 @@ define([
             selection.addRange(range);
         },
         render: function () {
-            var properties = this.props.properties[this.state.language];
-            var theme = this.props.themes[this.state.theme];
+            var properties = this.props.properties[this.state.language],
+                theme = this.props.themes[this.state.theme];
 
-            // FIXME: Figure out an elegant solution to updating the title
+            // FIXME: Figure out an elegant solution to updating out-of-scope DOM
             document.title = properties.title;
+            document.getElementsByTagName("html")[0].setAttribute("lang", this.state.language);
             
             // jshint -W064
             return <article className="application">
                 <header>
-                    <div className="languageMenu transition" style={{"backgroundColor": theme.color}}>
+                    <div
+                        className="languageMenu transition"
+                        style={{
+                            "color": theme.color,
+                            "backgroundColor": theme.backgroundColor
+                        }}
+                    >
                         <Select
                             className="languageSelect"
                             name="language"
@@ -70,7 +77,8 @@ define([
                             options={this.props.languages.map(function (language) {
                                 return {
                                     "label": properties[language],
-                                    "value": language
+                                    "value": language,
+                                    "selected": this.state.language === language
                                 };
                             }.bind(this))}
                             onChange={this.handleLanguageChange}
@@ -90,7 +98,7 @@ define([
                     <p className="subtitle">{properties.subtitle}</p>
                 </header>
                 <section className="generator">
-                    <form className="details">
+                    <div className="details">
                         <Input
                             id="name"
                             type="text"
@@ -121,19 +129,23 @@ define([
                         />
                         <Select
                             className="primary transition"
-                            style={{"backgroundColor": theme.color}}
+                            style={{
+                                "color": theme.color,
+                                "backgroundColor": theme.backgroundColor
+                            }}
                             name="theme"
                             label={properties.themeLabel}
                             value={this.state.theme}
                             options={Object.keys(this.props.themes).map(function (theme) {
                                 return {
                                     "label": properties[theme],
-                                    "value": theme
+                                    "value": theme,
+                                    "selected": this.state.theme === theme
                                 };
                             }.bind(this))}
                             onChange={this.handleThemeChange}
                         />
-                    </form>
+                    </div>
                     <section className="preview">
                         <label>{properties.previewLabel}</label>
                         <Signature
@@ -148,7 +160,8 @@ define([
                                 src: theme.logoUrl,
                                 alt: properties.thoughtworksLabel
                             }}
-                            color={theme.color}
+                            color={theme.backgroundColor}
+                            backgroundColor={theme.color}
                             name={this.state.name}
                             title={this.state.title}
                             email={{
@@ -163,7 +176,10 @@ define([
                         <button
                             className="button primary transition"
                             onClick={this.selectSignature}
-                            style={{"backgroundColor": theme.color}}>
+                            style={{
+                                "color": theme.color,
+                                "backgroundColor": theme.backgroundColor
+                            }}>
                             {properties.selectSignatureLabel}
                         </button>
                         <p>

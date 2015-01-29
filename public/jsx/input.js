@@ -20,6 +20,7 @@ define(["react"], function (React) {
                     id={this.props.id}
                     onFocus={this.handleFocus}
                     name={this.props.name}
+                    title={this.props.label}
                     type={this.props.type}
                     value={this.props.value}
                     onChange={this.handleChange}

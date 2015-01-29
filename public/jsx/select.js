@@ -11,6 +11,7 @@ define(["react"], function (React) {
                 <label>{this.props.label}</label>
                 <select
                     name={this.props.name}
+                    title={this.props.label}
                     value={this.props.value}
                     onChange={this.handleChange}
                     className={this.props.className}
@@ -19,7 +20,8 @@ define(["react"], function (React) {
                         return <option
                             key={option.value}
                             value={option.value}
-                            label={option.label}>
+                            label={option.label}
+                            selected={option.selected}>
                             {option.label}
                         </option>;
                     })}

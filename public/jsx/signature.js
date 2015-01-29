@@ -26,11 +26,33 @@ define(["react"], function (React) {
                     </tr>
                     <tr>
                         <td width="75" style={{"paddingTop": "12px", "paddingBottom": "4px"}}>{this.props.email.label}</td>
-                        <td width="225" style={{"paddingTop": "12px", "paddingBottom": "4px"}}><a className="transition" href={"mailto:" + this.props.email.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.email.value}</span></a></td>
+                        <td width="225" style={{"paddingTop": "12px", "paddingBottom": "4px"}}>
+                            <a className="transition" href={"mailto:" + this.props.email.value} style={{
+                                "color": this.props.color,
+                                "backgroundColor": this.props.backgroundColor,
+                                "textDecoration": "none"
+                            }}>
+                                <span style={{
+                                    "color": this.props.color,
+                                    "backgroundColor": this.props.backgroundColor
+                                }}>{this.props.email.value}</span>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td width="75" style={{"paddingBottom": "12px"}}>{this.props.telephone.label}</td>
-                        <td width="225" style={{"paddingBottom": "12px"}}><a className="transition" href={"mailto:" + this.props.telephone.value} style={{"color": this.props.color, "textDecoration": "none"}}><span style={{"color": this.props.color}}>{this.props.telephone.value}</span></a></td>
+                        <td width="225" style={{"paddingBottom": "12px"}}>
+                            <a className="transition" href={"mailto:" + this.props.telephone.value} style={{
+                                "color": this.props.color,
+                                "backgroundColor": this.props.backgroundColor,
+                                "textDecoration": "none"
+                            }}>
+                                <span style={{
+                                    "color": this.props.color,
+                                    "backgroundColor": this.props.backgroundColor
+                                }}>{this.props.telephone.value}</span>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td width="300" colSpan="2"><a href={this.props.logo.href}><img
