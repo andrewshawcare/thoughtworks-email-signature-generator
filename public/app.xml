@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module specificationVersion="1">
+    <ModulePrefs
+        title="ThoughtWorks Email Signature Generator"
+        description="Give us your details and we'll give you your brand."
+        author="Andrew Shaw Care"
+        author_affiliation="ThoughtWorks"
+        author_email="ashawcar@thoughtworks.com"
+    >
+        <Require feature="dynamic-height"/>
+        <Require feature="embedded-experiences"/>
+        <Require feature="minimessage"/>
+        <Require feature="setprefs"/>
+        <Require feature="osapi"/>
+        <Require feature="views"/>
+
+        <Require feature="actions">
+            <Param name="action-contributions">
+                <![CDATA[
+                <action
+                    id="org.jivesoftware.thoughtworksemailsignaturegenerator"
+                    path="jive/tabs/actions"
+                    label="ThoughtWorks Email Signature Generator"
+                    view="thoughtWorksEmailSignatureGenerator"
+                />
+                ]]>
+            </Param>
+        </Require>
+
+        <Link rel="Icon" href="images/icon16x16.png"/>
+        <Link rel="MediumIcon" href="images/icon48x48.png"/>
+        <Link rel="LargeIcon" href="images/icon128x128.png"/>
+
+        <Link rel="Screenshot1" href="images/screenshot01.png"/>
+        <Link rel="Screenshot2" href="images/screenshot02.png"/>
+        <Link rel="Screenshot3" href="images/screenshot03.png"/>
+        <Link rel="Screenshot4" href="images/screenshot04.png"/>
+    </ModulePrefs>
+
+    <Content type="html" view="home,canvas" href="main.html" preferred_height="200"/>
+    <Content type="html" view="thoughtWorksEmailSignatureGenerator" href="index" preferred_height="400"/>
+</Module>
