@@ -37,6 +37,5 @@
         <Link rel="Screenshot4" href="images/screenshot04.png"/>
     </ModulePrefs>
 
-    <Content type="html" view="home,canvas" href="main.html" preferred_height="200"/>
-    <Content type="html" view="thoughtWorksEmailSignatureGenerator" href="index" preferred_height="400"/>
+    <Content type="html" view="thoughtWorksEmailSignatureGenerator" href="/" preferred_height="400"/>
 </Module>
