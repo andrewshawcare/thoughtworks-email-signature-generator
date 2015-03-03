@@ -42,7 +42,7 @@ define(["react"], function (React) {
                     <tr>
                         <td width="75" style={{"paddingBottom": "12px"}}>{this.props.telephone.label}</td>
                         <td width="225" style={{"paddingBottom": "12px"}}>
-                            <a className="transition" href={"mailto:" + this.props.telephone.value} style={{
+                            <a className="transition" href={"tel:" + this.props.telephone.value} style={{
                                 "color": this.props.color,
                                 "backgroundColor": this.props.backgroundColor,
                                 "textDecoration": "none"
