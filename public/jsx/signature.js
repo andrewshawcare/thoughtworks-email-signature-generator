@@ -67,6 +67,14 @@ define(["react"], function (React) {
                         }}
                     /></a></td>
                     </tr>
+
+                    <tr>
+                        <td width="300" colSpan="2" style={{"fontStyle": "italic","paddingTop":"10px", "font":"'Open Sans Light'", "fontSize":"10px"}}>ThoughtWorks Deutschland GmbH - Großer Burstah 46-48 - D-20457 Hamburg</td>
+                    </tr>
+                    <tr>
+                        <td width="300" colSpan="2" style={{"fontStyle": "italic","paddingTop":"10px", "font":"'Open Sans Light'", "fontSize":"10px"}}>Sitz der Gesellschaft: Hamburg - Geschäftsführer: Dr. Peter Buhrmann - AG Hamburg - HRB 115336</td>
+                    </tr>
+
                 </table>
             </div>;
         }

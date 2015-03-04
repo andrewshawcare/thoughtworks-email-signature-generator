@@ -68,6 +68,7 @@ define([], function () {
                 "backgroundColor": "rgb(238, 49, 45)",
                 "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_red.png"
             },
+
             "warmth": {
                 "color": "rgb(255, 255, 255)",
                 "backgroundColor": "rgb(158, 120, 95)",
