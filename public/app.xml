@@ -23,6 +23,8 @@
                     label="ThoughtWorks Email Signature Generator"
                     view="thoughtWorksEmailSignatureGenerator"
                 />
+                <action id="com.jivesoftware.launcherlessapp"
+                  path="jive/apps/launcher?filter=false()"/>
                 ]]>
             </Param>
         </Require>
