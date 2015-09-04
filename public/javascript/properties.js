@@ -2,6 +2,9 @@
 /* jshint -W100 */
 define([], function () {
     "use strict";
+    // Do not translate these two strings - they are required by German law to be in German
+    var legalFooterGermanyAddress = "ThoughtWorks Deutschland GmbH - Großer Burstah 46-48 - D-20457 Hamburg";
+    var legalFooterGermanyInfo = "Sitz der Gesellschaft: Hamburg - Geschäftsführer: Dr. Peter Buhrmann - AG Hamburg - HRB 115336"
     return {
         "en": {
             "languageLabel": "Language",
@@ -18,6 +21,10 @@ define([], function () {
             "titleLabel": "Title",
             "emailLabel": "Email",
             "telephoneLabel": "Telephone",
+            "legalFooterGermanyLabel": "Add legal footer for Germany?",
+            "legalFooterGermanyDescription": "Only mandatory for employees on German payroll",
+            "legalFooterGermanyAddress": legalFooterGermanyAddress,
+            "legalFooterGermanyInfo": legalFooterGermanyInfo,
             "themeLabel": "Theme",
             "black": "Black",
             "blue": "Blue",
@@ -54,6 +61,10 @@ define([], function () {
             "titleLabel": "头衔",
             "emailLabel": "邮箱",
             "telephoneLabel": "电话",
+            "legalFooterGermanyLabel": "Add legal footer for Germany?", // TODO Translate
+            "legalFooterGermanyDescription": "Only mandatory for employees on German payroll", // TODO Translate
+            "legalFooterGermanyAddress": legalFooterGermanyAddress,
+            "legalFooterGermanyInfo": legalFooterGermanyInfo,
             "themeLabel": "主题",
             "black": "黑色",
             "blue": "蓝色",
@@ -90,6 +101,10 @@ define([], function () {
             "titleLabel": "Posición",
             "emailLabel": "Correo",
             "telephoneLabel": "Teléfono",
+            "legalFooterGermanyLabel": "Añadir pie de página legal de Alemania?",
+            "legalFooterGermanyDescription": "Sólo obligatorio para los empleados en nómina alemana",
+            "legalFooterGermanyAddress": legalFooterGermanyAddress,
+            "legalFooterGermanyInfo": legalFooterGermanyInfo,
             "themeLabel": "Tema",
             "black": "Negro",
             "blue": "Azul",
@@ -126,6 +141,10 @@ define([], function () {
             "titleLabel": "Posição",
             "emailLabel": "Email",
             "telephoneLabel": "Telefone",
+            "legalFooterGermanyLabel": "Add legal footer for Germany?", // TODO Translate
+            "legalFooterGermanyDescription": "Only mandatory for employees on German payroll", // TODO Translate
+            "legalFooterGermanyAddress": legalFooterGermanyAddress,
+            "legalFooterGermanyInfo": legalFooterGermanyInfo,
             "themeLabel": "Tema",
             "black": "Preto",
             "blue": "Azul",
@@ -162,6 +181,10 @@ define([], function () {
             "titleLabel": "Position",
             "emailLabel": "Email",
             "telephoneLabel": "Telefon",
+            "legalFooterGermanyLabel": "Fußzeile für Geschäftsbriefe in Deutschland hinzufügen?",
+            "legalFooterGermanyDescription": "Nur verpflichtend für Angestellte in Deutschland",
+            "legalFooterGermanyAddress": legalFooterGermanyAddress,
+            "legalFooterGermanyInfo": legalFooterGermanyInfo,
             "themeLabel": "Theme",
             "black": "Schwarz",
             "blue": "Blau",

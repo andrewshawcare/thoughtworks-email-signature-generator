@@ -4,11 +4,13 @@ define([
     "react",
     "jsx!../jsx/select",
     "jsx!../jsx/input",
+    "jsx!../jsx/checkbox",
     "jsx!../jsx/signature"
 ], function (
     React,
     Select,
     Input,
+    Checkbox,
     Signature
 ) {
     "use strict";
@@ -20,6 +22,9 @@ define([
                 title: this.props.title,
                 email: this.props.email,
                 telephone: this.props.telephone,
+                shouldAddLegalFooterGermany: true,
+                footerFirstLine: this.props.footerFirstLine,
+                footerSecondLine: this.props.footerSecondLine,
                 theme: this.props.theme
             };
         },
@@ -37,6 +42,16 @@ define([
         },
         handleTelephoneChange: function (telephone) {
             this.setState({telephone: telephone});
+        },
+        handleLegalFooterGermanyChange: function (shouldAddLegalFooterGermany) {
+            this.setState({shouldAddLegalFooterGermany: !this.state.shouldAddLegalFooterGermany});
+            if (this.state.shouldAddLegalFooterGermany) {
+                this.setState({footerFirstLine: this.props.properties[this.state.language].legalFooterGermanyAddress});
+                this.setState({footerSecondLine: this.props.properties[this.state.language].legalFooterGermanyInfo});
+            } else {
+                this.setState({footerFirstLine: null});
+                this.setState({footerSecondLine: null});
+            }
         },
         handleThemeChange: function (theme) {
             this.setState({theme: theme});
@@ -127,6 +142,15 @@ define([
                             value={this.state.telephone}
                             onChange={this.handleTelephoneChange}
                         />
+                        <Checkbox
+                            id="legalFooterGermany"
+                            label={properties.legalFooterGermanyLabel}
+                            value={this.state.shouldAddLegalFooterGermany}
+                            onChange={this.handleLegalFooterGermanyChange}
+                        />
+                        <p style={{"font-size": "0.8rem"}}>
+                            {properties.legalFooterGermanyDescription}
+                        </p>
                         <Select
                             className="primary transition"
                             style={{
@@ -172,6 +196,8 @@ define([
                                 label: properties.telephoneLabel,
                                 value: this.state.telephone
                             }}
+                            footerFirstLine={this.state.footerFirstLine}
+                            footerSecondLine={this.state.footerSecondLine}
                         />
                         <button
                             className="button primary transition"
