@@ -20,7 +20,8 @@ define(["react"], function (React) {
                 <input
                     id={this.props.id}
                     style={{"position": "absolute",
-                            "top": "3px"}}
+                            "top": "3px",
+                            "width": "auto"}}
                     onFocus={this.handleFocus}
                     name={this.props.name}
                     title={this.props.label}
