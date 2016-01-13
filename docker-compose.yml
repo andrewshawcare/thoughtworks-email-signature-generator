@@ -1,0 +1,5 @@
+thoughtworks-email-signature-generator:
+  build: .
+  ports:
+    - '5000:5000'
+    - '35729:35729'

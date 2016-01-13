@@ -15,15 +15,4 @@ Generate an on-brand and cross-client email signature personalized with your det
 
 ### Prerequisites
 
-1. [Vagrant](https://www.vagrantup.com/)
-2. [VirtualBox](https://www.virtualbox.org/)
-
 ### Getting Started
-
-To run the application, execute the following commands from the project's working directory:
-
-1. `vagrant plugin install vagrant-librarian-puppet`
-2. `vagrant up`
-3. `vagrant ssh`
-4. `cd /vagrant`
-5. `node index.js`

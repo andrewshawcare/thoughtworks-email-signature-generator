@@ -4,7 +4,7 @@
   "description": "Generate an on-brand and cross-client email signature personalized with your details and preferences.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "./node_modules/.bin/grunt test"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "newrelic": "^1.14.7"
   },
   "devDependencies": {
+    "bower": "^1.7.2",
     "grunt": "^0.4.5",
     "grunt-aws": "^0.4.0",
     "grunt-cli": "^0.1.13",
