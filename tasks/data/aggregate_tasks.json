@@ -22,5 +22,13 @@
             "hashres",
             "s3"
         ]
+    },
+    {
+      "name": "start",
+      "tasks": [
+        "less",
+        "shell:build",
+        "shell:start"
+      ]
     }
 ]

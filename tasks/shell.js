@@ -1,9 +1,9 @@
 /* global module, require */
 module.exports = (function () {
     "use strict";
-    
+
     var globs = require("./data/globs");
-    
+
     return {
         id: "shell",
         name: "grunt-shell",
@@ -20,6 +20,9 @@ module.exports = (function () {
             },
             build: {
                 command: "node ./node_modules/requirejs/bin/r.js -o ./build.js"
+            },
+            start: {
+                command: "node ./index.js"
             }
         }
     };
