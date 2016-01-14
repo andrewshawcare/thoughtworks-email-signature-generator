@@ -13,13 +13,6 @@
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "compression": "^1.3.0",
-    "serve-static": "^1.8.1",
-    "express": "^4.11.0",
-    "jade": "^1.9.1",
-    "newrelic": "^1.14.7"
-  },
-  "devDependencies": {
     "bower": "^1.7.2",
     "grunt": "^0.4.5",
     "grunt-aws": "^0.4.0",
@@ -33,7 +26,12 @@
     "grunt-plato": "^1.2.1",
     "grunt-shell": "^1.1.1",
     "jsxhint": "^0.9.0",
-    "requirejs": "^2.1.15"
+    "requirejs": "^2.1.15",
+    "compression": "^1.3.0",
+    "serve-static": "^1.8.1",
+    "express": "^4.11.0",
+    "jade": "^1.9.1",
+    "newrelic": "^1.14.7"
   },
   "engines": {
     "node": "0.10.x"
