@@ -20,9 +20,6 @@ module.exports = (function () {
             },
             build: {
                 command: "node ./node_modules/requirejs/bin/r.js -o ./build.js"
-            },
-            start: {
-                command: "node ./index.js"
             }
         }
     };
