@@ -19,7 +19,10 @@ module.exports = (function () {
                     globs.jsx.join(" ")
             },
             build: {
-                command: "node ./node_modules/requirejs/bin/r.js -o ./build.js"
+                command: "./node_modules/.bin/r.js -o ./build.js"
+            },
+            deploy: {
+                command: "node ./index.js"
             }
         }
     };

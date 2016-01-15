@@ -22,5 +22,14 @@
             "hashres",
             "s3"
         ]
+    },
+    {
+        "name": "deploy",
+        "tasks": [
+          "less",
+          "shell:build",
+          "hashres",
+          "shell:deploy"
+        ]
     }
 ]
