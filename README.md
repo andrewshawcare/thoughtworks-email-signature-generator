@@ -18,10 +18,6 @@ Generate an on-brand and cross-client email signature personalized with your det
 
 ## Local Deployment
 
-### Kitematic
-
-1. Search for `andrewshawcare/thoughtworks-email-signature-generator`.
-
 ### Docker Compose
 
 1. `docker-compose up`
