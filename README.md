@@ -11,11 +11,11 @@ Generate an on-brand and cross-client email signature personalized with your det
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/pr?style=flat)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/issue?style=flat)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
 
-## Prerequisites
+## Deployment
+
+### Prerequisites
 
 This project is deployed with Docker. The easiest way to setup a Docker environment is by installing the [Docker Toolbox](https://www.docker.com/docker-toolbox).
-
-## Local Deployment
 
 ### Docker Compose
 
