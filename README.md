@@ -11,17 +11,17 @@ Generate an on-brand and cross-client email signature personalized with your det
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/pr?style=flat)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
 [![Issue Stats](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator/badge/issue?style=flat)](http://issuestats.com/github/andrewshawcare/thoughtworks-email-signature-generator)
 
-# Prerequisites (OS X)
+## Prerequisites (OS X)
 
 1. `brew update`
 2. `brew install docker-toolbox`
 
-# Local Deployment
+## Local Deployment
 
-## Kitematic
+### Kitematic
 
 This project can be deployed with Kitematic. Search for `andrewshawcare/thoughtworks-email-signature-generator`.
 
-## Docker Compose
+### Docker Compose
 
 1. `docker-compose up`
