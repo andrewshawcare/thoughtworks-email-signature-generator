@@ -4,7 +4,7 @@ var Express = require("express"),
     newrelic = require("newrelic"),
     compression = require("compression"),
     serveStatic = require('serve-static'),
-    jade = require("jade"),
+    pug = require("pug"),
     port = Number(process.env.PORT || 5000),
     staticAssetsUrl = process.env.STATIC_ASSETS_URL || ".",
     directory = process.env.NODE_ENV === "production" ? "/build" : "/public",
@@ -16,13 +16,13 @@ server.use(compression());
 // This is required to serve legacy copied email signatures
 server.use(serveStatic(__dirname + "/public"));
 
-server.set("views", __dirname + directory + "/jade");
-server.engine("jade", jade.__express);
+server.set("views", __dirname + directory + "/pug");
+server.engine("pug", pug.__express);
 
 server.get("/", function (request, response) {
     "use strict";
     response.set("Cache-Control", "no-cache");
-    response.render("index.jade", {staticAssetsUrl: staticAssetsUrl});
+    response.render("index.pug", {staticAssetsUrl: staticAssetsUrl});
 });
 
 server.listen(port);
