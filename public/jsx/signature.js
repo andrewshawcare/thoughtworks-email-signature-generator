@@ -7,8 +7,8 @@ define(["react"], function (React) {
             return <div className={this.props.className} style={{"float": "left"}}>
                 <table cellSpacing="0" cellPadding="0" border="0" style={{
                     "fontSize": "12px",
-                    "fontWeight": "normal",
-                    "fontFamily": "OpenSans-Light," +
+                    "lineHeight": "12px",
+                     "fontFamily": "OpenSans-Light," +
                         "'Open Sans Light'," +
                         "OpenSans," +
                         "'Open Sans'," +
@@ -16,13 +16,32 @@ define(["react"], function (React) {
                         "Helvetica," +
                         "Arial," +
                         "sans-serif",
-                    "lineHeight": "12px"
+                        "fontWeight": "normal"
                 }}>
                     <tr>
-                        <td width="300" colSpan="2" style={{"paddingBottom": "4px", "fontWeight": "bold"}}>{this.props.name}</td>
+                        <td width="300" colSpan="2" style={{"paddingBottom": "4px",
+                        "fontFamily": "OpenSans-Bold," +
+                        "'Open Sans Bold'," +
+                        "OpenSans," +
+                        "'Open Sans'," +
+                        "'Helvetica Neue'," +
+                        "Helvetica," +
+                        "Arial," +
+                        "sans-serif",
+                        "fontWeight": "bold"
+                    }}>{this.props.name}</td>
                     </tr>
                     <tr>
-                        <td width="300" colSpan="2" style={{"fontStyle": "italic"}}>{this.props.title}</td>
+                        <td width="300" colSpan="2" style={{ "fontFamily": "OpenSans-LightItalic," +
+                        "'Open Sans Light Italic'," +
+                        "OpenSans," +
+                        "'Open Sans'," +
+                        "'Helvetica Neue'," +
+                        "Helvetica," +
+                        "Arial," +
+                        "sans-serif",
+                        "fontWeight": "italic"
+                    }}>{this.props.title}</td>
                     </tr>
                     <tr>
                         <td width="75" style={{"paddingTop": "12px", "paddingBottom": "4px"}}>{this.props.email.label}</td>
