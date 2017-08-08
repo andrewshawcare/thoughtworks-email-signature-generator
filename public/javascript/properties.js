@@ -179,7 +179,7 @@ define([], function () {
             "orange": "Orange",
             "pink": "Pink",
             "plum": "Pflaume",
-            "pride": "Pride"
+            "pride": "Pride",
             "red": "Rot",
             "warmth": "Warm",
             "previewLabel": "Vorschau",
