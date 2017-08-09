@@ -16,7 +16,7 @@ define(["react"], function (React) {
                         "Helvetica," +
                         "Arial," +
                         "sans-serif",
-                        "fontWeight": "normal"
+                        "fontWeight": "300"
                 }}>
                     <tr>
                         <td width="300" colSpan="2" style={{"paddingBottom": "4px",
@@ -28,7 +28,7 @@ define(["react"], function (React) {
                         "Helvetica," +
                         "Arial," +
                         "sans-serif",
-                        "fontWeight": "bold"
+                        "fontWeight": "600"
                     }}>{this.props.name}</td>
                     </tr>
                     <tr>
@@ -40,7 +40,7 @@ define(["react"], function (React) {
                         "Helvetica," +
                         "Arial," +
                         "sans-serif",
-                        "fontWeight": "italic"
+                        "fontStyle": "italic",
                     }}>{this.props.title}</td>
                     </tr>
                     <tr>
