@@ -20,8 +20,8 @@ define(["react"], function (React) {
                 }}>
                     <tr>
                         <td width="300" colSpan="2" style={{"paddingBottom": "4px",
-                        "fontFamily": "OpenSans-Bold," +
-                        "'Open Sans Bold'," +
+                        "fontFamily": "OpenSans-SemiBold," +
+                        "'Open Sans Semi Bold'," +
                         "OpenSans," +
                         "'Open Sans'," +
                         "'Helvetica Neue'," +
