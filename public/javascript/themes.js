@@ -63,6 +63,11 @@ define([], function () {
                 "backgroundColor": "rgb(106, 37, 105)",
                 "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_plum.png"
             },
+            "pride": {
+                "color": "rgb(255, 255, 255)",
+                "backgroundColor": "rgb(106, 37, 105)",
+                "logoUrl": staticAssetsUrl + "/images/thoughtworks_logo_pride.png"
+            },
             "red": {
                 "color": "rgb(255, 255, 255)",
                 "backgroundColor": "rgb(238, 49, 45)",
