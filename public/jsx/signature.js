@@ -4,8 +4,8 @@ define(["react"], function (React) {
     "use strict";
     return React.createClass({
         render: function () {
-            return <div className={this.props.className} style={{"float": "left"}}>
-                <table cellSpacing="0" cellPadding="0" border="0" style={{
+            return <div className={this.props.className} style={{
+                    "float": "left",
                     "fontSize": "12px",
                     "fontWeight": "normal",
                     "fontFamily": "OpenSans-Light," +
@@ -15,7 +15,8 @@ define(["react"], function (React) {
                         "'Helvetica Neue'," +
                         "Helvetica," +
                         "Arial," +
-                        "sans-serif",
+                        "sans-serif"}}>
+                <table cellSpacing="0" cellPadding="0" border="0" style={{
                     "lineHeight": "12px"
                 }}>
                     <tr>
@@ -68,6 +69,8 @@ define(["react"], function (React) {
                     /></a></td>
                     </tr>
                 </table>
+                <p style={{"fontSize": "11px", "fontStyle": "italic"}}> {this.props.footerFirstLine} </p>
+                <p style={{"fontSize": "11px", "fontStyle": "italic"}}> {this.props.footerSecondLine} </p>
             </div>;
         }
     });

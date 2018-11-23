@@ -18,6 +18,9 @@ define([], function () {
             "titleLabel": "Title",
             "emailLabel": "Email",
             "telephoneLabel": "Telephone",
+            "footerLabel": "Footer",
+            "noFooter": "None",
+            "germanLegalFooter": "German Legal Info",
             "themeLabel": "Theme",
             "black": "Black",
             "blue": "Blue",
@@ -54,6 +57,9 @@ define([], function () {
             "titleLabel": "头衔",
             "emailLabel": "邮箱",
             "telephoneLabel": "电话",
+            "footerLabel": "Footer",
+            "noFooter": "None",
+            "germanLegalFooter": "German Legal Info", // TODO Translate
             "themeLabel": "主题",
             "black": "黑色",
             "blue": "蓝色",
@@ -90,6 +96,9 @@ define([], function () {
             "titleLabel": "Posición",
             "emailLabel": "Correo",
             "telephoneLabel": "Teléfono",
+            "footerLabel": "Pie de Página",
+            "noFooter": "None", // TODO Translate
+            "germanLegalFooter": "German Legal Info", // TODO Translate
             "themeLabel": "Tema",
             "black": "Negro",
             "blue": "Azul",
@@ -126,6 +135,9 @@ define([], function () {
             "titleLabel": "Posição",
             "emailLabel": "Email",
             "telephoneLabel": "Telefone",
+            "footerLabel": "Footer", // TODO Translate
+            "noFooter": "None", // TODO Translate
+            "germanLegalFooter": "German Legal Info", // TODO Translate
             "themeLabel": "Tema",
             "black": "Preto",
             "blue": "Azul",
@@ -162,6 +174,9 @@ define([], function () {
             "titleLabel": "Position",
             "emailLabel": "Email",
             "telephoneLabel": "Telefon",
+            "footerLabel": "Fußzeile",
+            "noFooter": "Keine",
+            "germanLegalFooter": "Angaben für Geschäftsbriefe",
             "themeLabel": "Theme",
             "black": "Schwarz",
             "blue": "Blau",

@@ -7,6 +7,7 @@ define([], function () {
         "name": "Thought Worker",
         "title": "Consultant",
         "email": "tworker@thoughtworks.com",
-        "telephone": "+1 234 567 8910"
+        "telephone": "+1 234 567 8910",
+        "footer": "noFooter"
     };
 });

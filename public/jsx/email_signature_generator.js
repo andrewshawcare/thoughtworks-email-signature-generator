@@ -20,6 +20,9 @@ define([
                 title: this.props.title,
                 email: this.props.email,
                 telephone: this.props.telephone,
+                footer: this.props.footer,
+                footerFirstLine: this.props.footerFirstLine,
+                footerSecondLine: this.props.footerSecondLine,
                 theme: this.props.theme
             };
         },
@@ -37,6 +40,11 @@ define([
         },
         handleTelephoneChange: function (telephone) {
             this.setState({telephone: telephone});
+        },
+        handleFooterChange: function (footer) {
+            this.setState({footer: footer});
+            this.setState({footerFirstLine: this.props.footers[footer].firstLine});
+            this.setState({footerSecondLine: this.props.footers[footer].secondLine});
         },
         handleThemeChange: function (theme) {
             this.setState({theme: theme});
@@ -128,6 +136,19 @@ define([
                             onChange={this.handleTelephoneChange}
                         />
                         <Select
+                            name="footer"
+                            label={properties.footerLabel}
+                            value={this.state.footer}
+                            options={Object.keys(this.props.footers).map(function (footer) {
+                                return {
+                                    "label": properties[footer],
+                                    "value": footer,
+                                    "selected": this.state.footer === footer
+                                };
+                            }.bind(this))}
+                            onChange={this.handleFooterChange}
+                        />
+                        <Select
                             className="primary transition"
                             style={{
                                 "color": theme.color,
@@ -172,6 +193,8 @@ define([
                                 label: properties.telephoneLabel,
                                 value: this.state.telephone
                             }}
+                            footerFirstLine={this.state.footerFirstLine}
+                            footerSecondLine={this.state.footerSecondLine}
                         />
                         <button
                             className="button primary transition"
